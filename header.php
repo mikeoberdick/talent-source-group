@@ -27,6 +27,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <div class="hfeed site" id="page">
 
+<div id = "logoContainer">
+	<a href = "<?php echo site_url(); ?>"><img id = "headerLogo" class = "mx-auto d-block" src = "<?php the_field('company_logo', 'option'); ?>" alt = "<?php echo bloginfo('name') ?>"></a>
+</div>
+
 	<!-- ******************* The Navbar Area ******************* -->
 	<div class="wrapper-fluid wrapper-navbar" id="wrapper-navbar">
 
@@ -43,9 +47,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<span class="navbar-toggler-icon"></span>
 				</button>
 					
-				<!-- Logo -->
-				<a href = "<?php echo site_url(); ?>"><img id = "headerLogo" class = "mx-auto d-block" src = "<?php the_field('company_logo', 'option'); ?>" alt = "<?php echo bloginfo('name') ?>"></a>
-
 				<!-- The WordPress Menu goes here -->
 				<?php wp_nav_menu(
 					array(
