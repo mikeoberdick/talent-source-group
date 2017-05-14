@@ -31,16 +31,40 @@ body {
 /*--------------------[HEADER]--------------------*/
 /*------------------------------------------------*/
 
-.navbar {
+#logoContainer {
 	background-color: $brand-primary;
+	justify-content: center;
 
-	.container {
-		justify-content: center;
+	#headerLogo {
+		height: 150px;
 	}
 }
 
-#headerLogo {
-	height: 150px;
+.navbar {
+	background-color: $brand-secondary;
+	padding-top: 30px;
+	padding-bottom: 25px;
+
+	.container {
+		#navbarNavDropdown {
+			justify-content: center;
+
+			a {
+				color: $brand-primary;
+				text-transform: uppercase;
+				font-weight: bold;
+				border-bottom: 5px solid transparent;
+				padding-left: 10px;
+				padding-rigth: 10px;
+
+				&:hover {
+					border-color: $brand-primary;
+				}
+				}
+		}
+
+		
+	}
 }
 
 
@@ -53,6 +77,14 @@ body {
 /*----------------------[PAGES]-------------------*/
 /*------------------------------------------------*/
 
+//Homepage
+
+.heroSection {
+	background-size: cover;
+    background-position: center center;
+    min-height: 450px;
+}
+
 
 /*------------------------------------------------*/
 /*--------------------[SIDEBAR]-------------------*/
@@ -64,7 +96,8 @@ body {
 /*------------------------------------------------*/
 
 #wrapper-footer {
-	color: $brand-secondary;
+	background-color: $brand-secondary;
+	color: $brand-primary;
 	padding-top: 0;
 	padding-bottom: 0;
 	text-transform: uppercase;
@@ -80,6 +113,10 @@ body {
 		    text-transform: uppercase;
 		    color: $brand-primary
 		}
+
+	i {
+		color: $brand-primary;
+	}
 
 	ul {
 		padding-left: 0;
@@ -97,6 +134,41 @@ body {
 					text-decoration: none;
 				}
 			}
+		}
+	}
+
+	#footerSocialIcons {
+		font-size: 50px;
+   		color: #004265;
+	}
+
+	#address {
+		padding-left: 1.5em;
+    	position: relative;
+
+    	&:before {
+			content: "\f041";
+		    font-family: "FontAwesome";
+		    position: absolute;
+		    top: 0;
+		    left: 0;
+    	}
+	}
+
+}
+
+
+#bottomFooter {
+	background-color: $brand-primary;
+	color: #fff;
+	padding-top: 25px;
+	padding-bottom: 25px;
+
+	a {
+		color: #fff;
+
+		&:hover {
+			text-decoration: none;
 		}
 	}
 }

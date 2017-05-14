@@ -9257,13 +9257,27 @@ body {
 /*------------------------------------------------*/
 /*--------------------[HEADER]--------------------*/
 /*------------------------------------------------*/
-.navbar {
-  background-color: #004265; }
-  .navbar .container {
-    justify-content: center; }
+#logoContainer {
+  background-color: #004265;
+  justify-content: center; }
+  #logoContainer #headerLogo {
+    height: 150px; }
 
-#headerLogo {
-  height: 150px; }
+.navbar {
+  background-color: #f2f2f2;
+  padding-top: 30px;
+  padding-bottom: 25px; }
+  .navbar .container #navbarNavDropdown {
+    justify-content: center; }
+    .navbar .container #navbarNavDropdown a {
+      color: #004265;
+      text-transform: uppercase;
+      font-weight: bold;
+      border-bottom: 5px solid transparent;
+      padding-left: 10px;
+      padding-rigth: 10px; }
+      .navbar .container #navbarNavDropdown a:hover {
+        border-color: #004265; }
 
 /*------------------------------------------------*/
 /*-------------------[MENU]-----------------------*/
@@ -9271,6 +9285,11 @@ body {
 /*------------------------------------------------*/
 /*----------------------[PAGES]-------------------*/
 /*------------------------------------------------*/
+.heroSection {
+  background-size: cover;
+  background-position: center center;
+  min-height: 450px; }
+
 /*------------------------------------------------*/
 /*--------------------[SIDEBAR]-------------------*/
 /*------------------------------------------------*/
@@ -9278,7 +9297,8 @@ body {
 /*---------------------[FOOTER]-------------------*/
 /*------------------------------------------------*/
 #wrapper-footer {
-  color: #000000;
+  background-color: #f2f2f2;
+  color: #004265;
   padding-top: 0;
   padding-bottom: 0;
   text-transform: uppercase;
@@ -9289,6 +9309,8 @@ body {
     padding-bottom: 5px;
     border-bottom: solid 2px;
     text-transform: uppercase;
+    color: #004265; }
+  #wrapper-footer i {
     color: #004265; }
   #wrapper-footer ul {
     padding-left: 0;
@@ -9301,6 +9323,28 @@ body {
         font-size: 12px; }
         #wrapper-footer ul li a:hover {
           text-decoration: none; }
+  #wrapper-footer #footerSocialIcons {
+    font-size: 50px;
+    color: #004265; }
+  #wrapper-footer #address {
+    padding-left: 1.5em;
+    position: relative; }
+    #wrapper-footer #address:before {
+      content: "\f041";
+      font-family: "FontAwesome";
+      position: absolute;
+      top: 0;
+      left: 0; }
+
+#bottomFooter {
+  background-color: #004265;
+  color: #fff;
+  padding-top: 25px;
+  padding-bottom: 25px; }
+  #bottomFooter a {
+    color: #fff; }
+    #bottomFooter a:hover {
+      text-decoration: none; }
 
 /*------------------------------------------------*/
 /*---------------[RESPONSIVE LAYOUTS]-------------*/
