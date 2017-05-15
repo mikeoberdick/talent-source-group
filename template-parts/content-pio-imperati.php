@@ -2,7 +2,7 @@
 
 <div class="row">
 	<div class = "col-sm-12">
-		<header class="entry-header mb-5">
+		<header class="entry-header">
 			<?php the_title( '<h1>', '</h1>' ); ?>
 		</header><!-- .entry-header -->
 	</div>			

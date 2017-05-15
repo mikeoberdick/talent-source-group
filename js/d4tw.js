@@ -13,9 +13,18 @@ jQuery('ul.navbar-nav li.dropdown').hover(function() {
 //Change color of side tabs after srolling past the header
 jQuery(document).on('scroll', function(){
        if (jQuery(window).scrollTop() > 28){
-          jQuery('.fixedBtn').addClass('scrollingBtn');
+          jQuery('#hireSomeone').addClass('scrollingBtn');
        }
        else if (jQuery(window).scrollTop() < 28){
-          jQuery('.fixedBtn').removeClass('scrollingBtn');
+          jQuery('#hireSomeone').removeClass('scrollingBtn');
+       }
+    });
+
+jQuery(document).on('scroll', function(){
+       if (jQuery(window).scrollTop() > 95){
+          jQuery('#getHired').addClass('scrollingBtn');
+       }
+       else if (jQuery(window).scrollTop() < 95){
+          jQuery('#getHired').removeClass('scrollingBtn');
        }
     });

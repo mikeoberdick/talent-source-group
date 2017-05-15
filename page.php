@@ -32,6 +32,10 @@ get_header();
 		get_template_part( 'template-parts/content', 'about-the-firm' );
 	}
 
+	else if ( is_page( 'contact' ) ) {
+		get_template_part( 'template-parts/content', 'contact' );
+	}
+
 	else {
 	get_template_part( 'loop-templates/content', 'page' );
 	}

@@ -18,8 +18,12 @@ h1, h2, h3, h4, h5 {
 }
 
 body {
-	color: #b2b2b2;
+	color: $body-text;
 	font-family: $body-font;
+}
+
+.entry-header {
+	margin-bottom: 1.5rem;
 }
 
 /*------------------------------------------------*/
@@ -38,7 +42,7 @@ body {
     justify-content: center;
 
 	#headerLogo {
-		height: 150px;
+		height: 125px;
 	}
 
 	.fixedBtn {
@@ -116,13 +120,50 @@ body {
     background-position: center center;
     min-height: 450px;
 
+    .opacityLayer {
+    	min-height: 450px;
+    	background-color: rgba(0,0,0,.5);
+    	}
+
+    	.hpCTA {
+    		color: #ffffff;
+    	}
+
     .hpButtons {
     	justify-content: center;
     	text-transform: uppercase;
 
     	button {
     		font-family: $body-font;
+    		width: 75%;
     	}
+    }
+}
+
+//Contact Page
+
+.contactInfo {
+	a {
+		color: $body-text;
+		text-decoration: none;
+	}
+}
+
+.nf-form-fields-required {
+	display: none;
+}
+
+.formSubmit {
+	font-family: $body-font;
+	text-transform: uppercase;
+    color: #fff !important;
+    background-color: $brand-primary !important;
+    border-color: $brand-primary !important;
+    @include border-radius(5px);
+
+    &:hover {
+    	background-color: #002132 !important;
+    	border-color: #001a28 !important;
     }
 }
 

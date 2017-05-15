@@ -9246,11 +9246,14 @@ Template:    Understrap
 /*------------------------------------------------*/
 h1, h2, h3, h4, h5 {
   color: #004265;
-  font-family: 'Slabo 13px', serif; }
+  font-family: "Slabo 13px", serif; }
 
 body {
   color: #b2b2b2;
-  font-family: 'cabin', sans-serif; }
+  font-family: "Cabin", sans-serif; }
+
+.entry-header {
+  margin-bottom: 1.5rem; }
 
 /*------------------------------------------------*/
 /*---------------[MAIN LAYOUT INFO]---------------*/
@@ -9263,7 +9266,7 @@ body {
   display: flex;
   justify-content: center; }
   #logoContainer #headerLogo {
-    height: 150px; }
+    height: 125px; }
   #logoContainer .fixedBtn {
     position: fixed;
     text-decoration: none;
@@ -9313,8 +9316,35 @@ body {
   background-size: cover;
   background-position: center center;
   min-height: 450px; }
+  .heroSection .opacityLayer {
+    min-height: 450px;
+    background-color: rgba(0, 0, 0, 0.5); }
+  .heroSection .hpCTA {
+    color: #ffffff; }
   .heroSection .hpButtons {
-    justify-content: center; }
+    justify-content: center;
+    text-transform: uppercase; }
+    .heroSection .hpButtons button {
+      font-family: "Cabin", sans-serif;
+      width: 75%; }
+
+.contactInfo a {
+  color: #b2b2b2;
+  text-decoration: none; }
+
+.nf-form-fields-required {
+  display: none; }
+
+.formSubmit {
+  font-family: "Cabin", sans-serif;
+  text-transform: uppercase;
+  color: #fff !important;
+  background-color: #004265 !important;
+  border-color: #004265 !important;
+  border-radius: 5px; }
+  .formSubmit:hover {
+    background-color: #002132 !important;
+    border-color: #001a28 !important; }
 
 /*------------------------------------------------*/
 /*--------------------[SIDEBAR]-------------------*/
