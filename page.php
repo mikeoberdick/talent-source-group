@@ -24,6 +24,14 @@ get_header();
 		get_template_part( 'template-parts/content', 'home' );
 	}
 
+	else if ( is_page( 'pio-imperati' ) ) {
+		get_template_part( 'template-parts/content', 'pio-imperati' );
+	}
+
+	else if ( is_page( 'about-the-firm' ) ) {
+		get_template_part( 'template-parts/content', 'about-the-firm' );
+	}
+
 	else {
 	get_template_part( 'loop-templates/content', 'page' );
 	}

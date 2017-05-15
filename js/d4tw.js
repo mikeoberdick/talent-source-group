@@ -9,3 +9,13 @@ jQuery('ul.navbar-nav li.dropdown').hover(function() {
 }, function() {
 	jQuery(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
 });
+
+//Change color of side tabs after srolling past the header
+jQuery(document).on('scroll', function(){
+       if (jQuery(window).scrollTop() > 28){
+          jQuery('.fixedBtn').addClass('scrollingBtn');
+       }
+       else if (jQuery(window).scrollTop() < 28){
+          jQuery('.fixedBtn').removeClass('scrollingBtn');
+       }
+    });

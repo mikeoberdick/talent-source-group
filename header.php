@@ -28,8 +28,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 <div class="hfeed site" id="page">
 
 <div id = "logoContainer">
-	<a href = "<?php echo site_url(); ?>"><img id = "headerLogo" class = "mx-auto d-block" src = "<?php the_field('company_logo', 'option'); ?>" alt = "<?php echo bloginfo('name') ?>"></a>
-</div>
+	
+	<div class = "fixedBtn" id = "getHired"><a href = "<?php echo bloginfo('url'); ?>/candidates">Get Hired</a></div>
+	<div class = "fixedBtn" id = "hireSomeone"><a href = "<?php echo bloginfo('url'); ?>/employers">Hire Someone</a></div>
+
+	<a href = "<?php echo site_url(); ?>"><img id = "headerLogo" src = "<?php the_field('company_logo', 'option'); ?>" alt = "<?php echo bloginfo('name') ?>"></a>
+</div><!-- #logoContainer -->
 
 	<!-- ******************* The Navbar Area ******************* -->
 	<div class="wrapper-fluid wrapper-navbar" id="wrapper-navbar">

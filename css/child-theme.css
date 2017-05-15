@@ -9245,11 +9245,12 @@ Template:    Understrap
 /*-----------------[BASIC STYLES]-----------------*/
 /*------------------------------------------------*/
 h1, h2, h3, h4, h5 {
-  color: #004265; }
+  color: #004265;
+  font-family: 'Slabo 13px', serif; }
 
 body {
   color: #b2b2b2;
-  font-family: 'open-sans', sans-serif; }
+  font-family: 'cabin', sans-serif; }
 
 /*------------------------------------------------*/
 /*---------------[MAIN LAYOUT INFO]---------------*/
@@ -9259,14 +9260,37 @@ body {
 /*------------------------------------------------*/
 #logoContainer {
   background-color: #004265;
+  display: flex;
   justify-content: center; }
   #logoContainer #headerLogo {
     height: 150px; }
+  #logoContainer .fixedBtn {
+    position: fixed;
+    text-decoration: none;
+    right: 0;
+    top: 50px;
+    text-transform: uppercase;
+    z-index: 9999; }
+    #logoContainer .fixedBtn a {
+      color: #004265;
+      background-color: #f2f2f2;
+      padding: 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 1s; }
+  #logoContainer .scrollingBtn a {
+    background-color: #004265 !important;
+    color: #f2f2f2 !important; }
+  #logoContainer #hireSomeone {
+    top: 115px; }
 
 .navbar {
   background-color: #f2f2f2;
   padding-top: 30px;
-  padding-bottom: 25px; }
+  padding-bottom: 25px;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black; }
   .navbar .container #navbarNavDropdown {
     justify-content: center; }
     .navbar .container #navbarNavDropdown a {
@@ -9289,6 +9313,8 @@ body {
   background-size: cover;
   background-position: center center;
   min-height: 450px; }
+  .heroSection .hpButtons {
+    justify-content: center; }
 
 /*------------------------------------------------*/
 /*--------------------[SIDEBAR]-------------------*/
