@@ -16,9 +16,15 @@
 			<h3 class = "mt-3">Address</h3>
 				<?php the_field('street_address_1', 'option'); ?><br/><?php the_field('street_address_2', 'option'); ?>
 			<h3 class = "mt-3">Map</h3>
-				<?php the_field('map', 'option'); ?>
-		</div>	
-
+				<?php
+				$location = get_field('map', 'option');
+					if( !empty($location) ):
+				?>
+				<div class="acf-map">
+ 					<div class="marker" data-lat="<?php echo $location['lat']; ?>" data-lng="<?php echo $location['lng']; ?>"></div>
+				</div>
+				<?php endif; ?>
+				</div>	
 		<div class = "col-sm-6">
 			<h3>Get In Touch</h3>
 			<?php echo do_shortcode('[ninja_form id=1]'); ?>

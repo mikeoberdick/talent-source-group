@@ -10,21 +10,22 @@ jQuery('ul.navbar-nav li.dropdown').hover(function() {
 	jQuery(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
 });
 
+
 //Change color of side tabs after srolling past the header
 jQuery(document).on('scroll', function(){
-       if (jQuery(window).scrollTop() > 28){
-          jQuery('#hireSomeone').addClass('scrollingBtn');
+       if (jQuery(window).scrollTop() > 30){
+          jQuery('#hireSomeone').addClass('scrollingTab');
        }
-       else if (jQuery(window).scrollTop() < 28){
-          jQuery('#hireSomeone').removeClass('scrollingBtn');
+       else if (jQuery(window).scrollTop() < 30){
+          jQuery('#hireSomeone').removeClass('scrollingTab');
        }
     });
 
 jQuery(document).on('scroll', function(){
-       if (jQuery(window).scrollTop() > 95){
-          jQuery('#getHired').addClass('scrollingBtn');
+       if (jQuery(window).scrollTop() > 75){
+          jQuery('#getHired').addClass('scrollingTab');
        }
-       else if (jQuery(window).scrollTop() < 95){
-          jQuery('#getHired').removeClass('scrollingBtn');
+       else if (jQuery(window).scrollTop() < 75){
+          jQuery('#getHired').removeClass('scrollingTab');
        }
     });

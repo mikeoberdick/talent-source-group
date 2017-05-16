@@ -16,6 +16,11 @@ get_header();
 
 <div class="wrapper" id="page-wrapper">
 
+<div id = "sideTabs">
+	<a id = "getHired" href = "<?php echo bloginfo('url'); ?>/candidates"><i class="fa fa-arrow-left" aria-hidden="true"></i> Get Hired</a>
+	<a id = "hireSomeone" href = "<?php echo bloginfo('url'); ?>/employers"><i class="fa fa-arrow-left" aria-hidden="true"></i> Hire Someone</a>
+</div>
+
 	<?php while ( have_posts() ) : the_post(); ?>
 
 	<?php
@@ -30,6 +35,10 @@ get_header();
 
 	else if ( is_page( 'about-the-firm' ) ) {
 		get_template_part( 'template-parts/content', 'about-the-firm' );
+	}
+
+	else if ( is_page ( 'current-jobs' ) ) {
+		get_template_part( 'template-parts/content', 'jobs' );
 	}
 
 	else if ( is_page( 'contact' ) ) {
