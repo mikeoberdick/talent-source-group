@@ -41,6 +41,14 @@ get_header();
 		get_template_part( 'template-parts/content', 'jobs' );
 	}
 
+	else if ( is_page ( 'employers' ) ) {
+		get_template_part( 'template-parts/content', 'employers' );
+	}
+
+	else if ( is_page ( 'candidates' ) ) {
+		get_template_part( 'template-parts/content', 'candidates' );
+	}
+
 	else if ( is_page( 'contact' ) ) {
 		get_template_part( 'template-parts/content', 'contact' );
 	}

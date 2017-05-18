@@ -26,6 +26,10 @@ body {
 	margin-bottom: 1.5rem;
 }
 
+.lightbox {
+	display: none;
+}
+
 /*------------------------------------------------*/
 /*---------------[MAIN LAYOUT INFO]---------------*/
 /*------------------------------------------------*/
@@ -117,10 +121,30 @@ body {
 
 
 /*------------------------------------------------*/
+/*-------------------[FORMS]-----------------------*/
+/*------------------------------------------------*/
+
+.nf-form-content input[type="submit"],
+.nf-form-content input[type="button"],
+.nf-form-content button {
+			font-family: $body-font;
+			text-transform: uppercase;
+		    color: #fff !important;
+		    background-color: $brand-primary !important;
+		    border-color: $brand-primary !important;
+		    @include border-radius(5px);
+
+		    &:hover {
+		    	background-color: #002132 !important;
+		    	border-color: #001a28 !important;
+			}
+}
+
+/*------------------------------------------------*/
 /*----------------------[PAGES]-------------------*/
 /*------------------------------------------------*/
 
-//Homepage
+// Homepage
 
 .heroSection {
 	background-size: cover;
@@ -147,7 +171,50 @@ body {
     }
 }
 
-//Contact Page
+// Current Jobs
+
+.jobPosting {
+	padding: 25px 0;
+	text-decoration: none;
+
+	&:nth-child(odd) {
+		background-color: #deecf3;
+	}
+
+	&:nth-child(even) {
+		background-color: #e3e3e3;
+	}
+
+	&:hover {
+		background-color: $brand-primary;
+		color: #ffffff;
+		text-decoration: none;
+
+		h5 {
+			color: #ffffff;
+		}
+	}
+}
+
+// Employers & Candidates
+
+.recentJobs {
+	a {
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+
+// Single Job Page
+
+#application {
+	padding: 50px;
+}
+
+// Contact Page
 
 .contactInfo {
 	a {

@@ -3,6 +3,7 @@
     <div class = "col-sm-12">
       <div class = "page-header">
         <h1><?php the_title(); ?></h1>
+        <p><?php the_content(); ?></p>
       </div>
     </div>
   </div>
@@ -22,24 +23,28 @@ $custom_query_args = array(
     'paged' => $paged,
 );
 
-$custom_query = new WP_Query( $custom_query_args );
-
-if ( $custom_query->have_posts() ) :
+$custom_query = new WP_Query( $custom_query_args ); ?>
+<div id = "currentJobs" class = "row mb-5">
+    <div class = "col-sm-12">
+      <article <?php post_class(); ?>>
+<?php if ( $custom_query->have_posts() ) :
     while( $custom_query->have_posts() ) : $custom_query->the_post(); ?>
-      <div class = "row">
-          <div class = "col-sm-12">
-            <article <?php post_class(); ?>>
-              <h5><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
-            </article>
-          </div>
-      </div>
+            
+            <a class = "jobPosting row" href="<?php the_permalink(); ?>">
+            
+              <div class = "col-sm-2"><?php echo get_the_date( 'm/d/Y' ); ?></div>
+              <div class = "col-sm-9"><h5><?php the_title(); ?></h5></div>
 
+            </a>
     <?php
     endwhile;
     ?>
+    </div>
+    </div>
+    </article>
 
     <?php if ($custom_query->max_num_pages > 1) : // custom pagination  ?>
-      <nav class="prev-next-posts row">
+      <nav class="prev-next-posts row mb-5">
             <div id = "newerPosts" class="prev-posts-link col-xs-6 text-left">
                 <?php echo get_next_posts_link( '<i class="fa fa-chevron-circle-left" aria-hidden="true"></i> Previous Page', $custom_query->max_num_pages ); ?>
             </div>
