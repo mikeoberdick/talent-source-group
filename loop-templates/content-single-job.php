@@ -18,17 +18,16 @@
 
 <div class = "col-sm-3">
 		<div>
-			<button type = "button" id = "applyBtn" class = "btn btn-primary btn-lg" href = "#" data-featherlight="#application"><i class="fa fa-check" aria-hidden="true"></i> Apply</button>
+			<button type = "button" id = "applyBtn" class = "btn btn-primary btn-lg apply" href = "#"><i class="fa fa-check" aria-hidden="true"></i> Apply</button>
 		</div>
 </div>
 
 </div><!-- .row -->
 
-<div id = "application" class = "lightbox">
+<div id = "application">
 	<h3>Apply for <?php the_title(); ?></h3>
 		<?php echo do_shortcode('[ninja_form id=2]'); ?>
 </div>
-
 
 	<div class="entry-content">
 		<h5 class = "mt-3">Description</h5>

@@ -29,3 +29,19 @@ jQuery(document).on('scroll', function(){
           jQuery('#getHired').removeClass('scrollingTab');
        }
     });
+
+jQuery( "#applyBtn" ).click(function() {
+  jQuery( "#application" ).slideToggle( "slow", function() {
+    // Animation complete.
+  });
+});
+
+jQuery('#applyBtn').click(function(){
+    var $this = jQuery(this);
+    $this.toggleClass('apply');
+    if($this.hasClass('apply')){
+      $this.html('<i class="fa fa-check" aria-hidden="true"></i> Apply');     
+    } else {
+      $this.html('<i class="fa fa-times" aria-hidden="true"></i> Close');
+    }
+  });
