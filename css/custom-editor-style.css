@@ -9255,6 +9255,9 @@ body {
 .entry-header {
   margin-bottom: 1.5rem; }
 
+.lightbox {
+  display: none; }
+
 /*------------------------------------------------*/
 /*---------------[MAIN LAYOUT INFO]---------------*/
 /*------------------------------------------------*/
@@ -9316,6 +9319,24 @@ body {
 /*-------------------[MENU]-----------------------*/
 /*------------------------------------------------*/
 /*------------------------------------------------*/
+/*-------------------[FORMS]-----------------------*/
+/*------------------------------------------------*/
+.nf-form-content input[type="submit"],
+.nf-form-content input[type="button"],
+.nf-form-content button {
+  font-family: "Cabin", sans-serif;
+  text-transform: uppercase;
+  color: #fff !important;
+  background-color: #004265 !important;
+  border-color: #004265 !important;
+  border-radius: 5px; }
+  .nf-form-content input[type="submit"]:hover,
+  .nf-form-content input[type="button"]:hover,
+  .nf-form-content button:hover {
+    background-color: #002132 !important;
+    border-color: #001a28 !important; }
+
+/*------------------------------------------------*/
 /*----------------------[PAGES]-------------------*/
 /*------------------------------------------------*/
 .heroSection {
@@ -9333,6 +9354,28 @@ body {
     .heroSection .hpButtons button {
       font-family: "Cabin", sans-serif;
       width: 75%; }
+
+.jobPosting {
+  padding: 25px 0;
+  text-decoration: none; }
+  .jobPosting:nth-child(odd) {
+    background-color: #deecf3; }
+  .jobPosting:nth-child(even) {
+    background-color: #e3e3e3; }
+  .jobPosting:hover {
+    background-color: #004265;
+    color: #ffffff;
+    text-decoration: none; }
+    .jobPosting:hover h5 {
+      color: #ffffff; }
+
+.recentJobs a {
+  text-decoration: none; }
+  .recentJobs a:hover {
+    text-decoration: none; }
+
+#application {
+  padding: 50px; }
 
 .contactInfo a {
   color: #b2b2b2;
