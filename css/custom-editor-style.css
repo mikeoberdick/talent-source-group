@@ -9345,7 +9345,14 @@ body {
   min-height: 450px; }
   .heroSection .opacityLayer {
     min-height: 450px;
-    background-color: rgba(0, 0, 0, 0.5); }
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .heroSection .hpCallout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
   .heroSection .hpCTA {
     color: #ffffff; }
   .heroSection .hpButtons {
@@ -9375,7 +9382,7 @@ body {
     text-decoration: none; }
 
 #application {
-  padding: 50px; }
+  display: none; }
 
 .contactInfo a {
   color: #b2b2b2;
