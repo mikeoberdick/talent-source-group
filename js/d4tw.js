@@ -30,11 +30,18 @@ jQuery(document).on('scroll', function(){
        }
     });
 
-// Toggle the slide functionality of the application form
 jQuery( "#applyBtn" ).click(function() {
-  jQuery( "#application" ).slideToggle( "slow", function() {
-    // Animation complete.
+ 
+    if ( jQuery( this ).hasClass( "apply" ) ) {
+      jQuery( "#application" ).slideToggle( "slow", function() {
+  }); }
+
+      else if ( jQuery( this ).hasClass( "formComplete" ) ) {
+        jQuery( "#application" ).slideUp( "slow", function() {
+        jQuery( "#application, .formComplete" ).remove();
   });
+      }
+ 
 });
 
 // Toggle between apply and close on application page
@@ -49,4 +56,11 @@ jQuery('#applyBtn').click(function(){
     }
   });
 
-
+// Add a class to the apply button after application is submitted
+  jQuery( document ).ready( function() {
+    jQuery( document )
+    .on('click', 'input[type=button]', function() {
+    jQuery('#applyBtn').addClass('formComplete');
+    jQuery('#applyBtn').removeAttr('id');
+    });
+  });
