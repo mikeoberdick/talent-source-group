@@ -30,11 +30,14 @@ jQuery(document).on('scroll', function(){
        }
     });
 
+// Toggle the slide functionality of the application form
 jQuery( "#applyBtn" ).click(function() {
   jQuery( "#application" ).slideToggle( "slow", function() {
     // Animation complete.
   });
 });
+
+// Toggle between apply and close on application page
 
 jQuery('#applyBtn').click(function(){
     var $this = jQuery(this);
@@ -45,3 +48,5 @@ jQuery('#applyBtn').click(function(){
       $this.html('<i class="fa fa-times" aria-hidden="true"></i> Close');
     }
   });
+
+

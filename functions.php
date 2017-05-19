@@ -54,6 +54,6 @@ require get_stylesheet_directory() . '/inc/users.php';
  */
 require get_stylesheet_directory() . '/inc/widgets.php';
 /**
- * Advanced Custom Fields
+ * Woocommerce
  */
 require get_stylesheet_directory() . '/inc/woocommerce.php';
