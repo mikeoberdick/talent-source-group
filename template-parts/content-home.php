@@ -24,9 +24,9 @@
 	<div class="container text-center">
 		<div class="row">
 			<div class="col-sm-12 ">
-				<h3 class = "sectionHeader mb-5">Solutions</h3>
+				<h3 class = "sectionHeader">Solutions</h3>
 			</div><!-- .col-sm-12 -->
-				<div class="col-sm-6 mb-3">
+				<div class="col-sm-6 mt-5 mb-3">
 					<i class="fa fa-handshake-o mb-3" aria-hidden="true"></i>
 					<h3>Permanent Placement</h3>
 				</div><!-- .col-sm-6 -->
