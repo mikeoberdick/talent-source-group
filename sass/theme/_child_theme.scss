@@ -61,22 +61,31 @@ body {
 			justify-content: center;
 
 			a {
+				font-family: $nav-font;
 				color: $brand-primary;
 				text-transform: uppercase;
 				font-weight: bold;
 				border-bottom: 5px solid transparent;
 				padding-left: 10px;
-				padding-rigth: 10px;
+				padding-right: 10px;
 
 				&:hover {
 					border-color: $brand-primary;
 				}
-				}
-		}
 
-		
+			}
+		}
+	}
+
+	.current-menu-item {
+
+	a {
+		border-color: $brand-primary !important;
+		}
 	}
 }
+
+
 
 #sideTabs {
     position: fixed;
@@ -91,7 +100,7 @@ body {
 
     a {
     	position: relative;
-    	right: -125px;
+    	right: -145px;
     	color: $brand-primary;
     	background-color: $brand-secondary;
     	padding: 15px 10px;
@@ -150,7 +159,57 @@ body {
 
 // Homepage
 
-.heroSection {
+.home {
+	#page-wrapper {
+		padding: 0;
+	}
+
+	.solutions {
+		background-color: $brand-secondary;
+		color: $brand-primary;
+		padding: 50px 0;
+
+		.sectionHeader {
+			text-align: left;
+			color: $brand-primary;
+			font-size: 2.5rem;
+			font-weight: bold;
+			padding-bottom: 10px;
+    		border-bottom: solid 3px;
+			}
+
+		i {
+			font-size: 60px;
+		}
+	}
+
+	.practiceAreas {
+		background-color: $brand-primary;
+		color: #ffffff;
+		padding: 50px 0;
+
+		.sectionHeader {
+			color: #ffffff;
+			font-size: 2.5rem;
+			font-weight: bold;
+			padding-bottom: 10px;
+    		border-bottom: solid 3px;
+			}
+	}
+
+	#ctaSection {
+		background-color: $brand-secondary;
+		text-align: center;
+    	padding: 50px 0;
+		
+		.content {
+			border: solid 5px $brand-primary;
+		    @include border-radius(5px);
+		    padding: 50px;
+		}
+	}
+
+	.heroSection {
 	background-size: cover;
     background-position: center center;
     min-height: 450px;
@@ -180,9 +239,13 @@ body {
     	button {
     		font-family: $body-font;
     		width: 75%;
+    		}
     	}
-    }
+	}
+
 }
+
+
 
 // Current Jobs
 
@@ -259,6 +322,41 @@ body {
     	background-color: #002132 !important;
     	border-color: #001a28 !important;
     }
+}
+
+// Blog
+
+.blog {
+	.entry-title {
+		a {
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+
+	article {
+		    display: flex;
+    		flex-direction: column;
+		    padding-bottom: 15px;
+		    border-bottom: solid 1px #dcdcdc;
+		    margin-bottom: 15px;
+
+		    &:last-of-type {
+		    	border: 0;
+		    }
+	}
+}
+
+.single {
+		.nav-links {
+			a {
+				color: #ffffff;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
 }
 
 

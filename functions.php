@@ -53,7 +53,15 @@ require get_stylesheet_directory() . '/inc/users.php';
  * @link http://codex.wordpress.org/Function_Reference/register_sidebar
  */
 require get_stylesheet_directory() . '/inc/widgets.php';
+
 /**
  * Woocommerce
  */
 require get_stylesheet_directory() . '/inc/woocommerce.php';
+
+/**
+ * Custom template tags
+ *
+ * @link https://codex.wordpress.org/Template_Tags
+ */
+require get_stylesheet_directory() . '/inc/template-tags.php';

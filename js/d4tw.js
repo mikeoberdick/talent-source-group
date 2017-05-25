@@ -30,37 +30,39 @@ jQuery(document).on('scroll', function(){
        }
     });
 
-jQuery( "#applyBtn" ).click(function() {
- 
-    if ( jQuery( this ).hasClass( "apply" ) ) {
-      jQuery( "#application" ).slideToggle( "slow", function() {
-  }); }
-
-      else if ( jQuery( this ).hasClass( "formComplete" ) ) {
-        jQuery( "#application" ).slideUp( "slow", function() {
-        jQuery( "#application, .formComplete" ).remove();
-  });
-      }
- 
-});
-
-// Toggle between apply and close on application page
+// Apply button functionality
 
 jQuery('#applyBtn').click(function(){
+
     var $this = jQuery(this);
-    $this.toggleClass('apply');
-    if($this.hasClass('apply')){
-      $this.html('<i class="fa fa-check" aria-hidden="true"></i> Apply');     
-    } else {
+
+    if ($this.hasClass('apply')){
+      $this.removeClass('apply');
+      $this.addClass('closeBtn');
       $this.html('<i class="fa fa-times" aria-hidden="true"></i> Close');
+      jQuery( "#application" ).slideDown( "slow", function() {
+  });
+
+    } else if ( $this.hasClass( 'closeBtn' ) ) {
+      $this.removeClass('closeBtn');
+      $this.addClass('apply');
+      $this.html('<i class="fa fa-check" aria-hidden="true"></i> Apply');
+      jQuery( "#application" ).slideUp( "slow", function() {
+  });
+
+    } else if ( $this.hasClass( "formComplete" ) ) {
+        jQuery( "#application, .formComplete" ).fadeOut(800, function() { jQuery(this).remove(); });
     }
+
   });
 
 // Add a class to the apply button after application is submitted
   jQuery( document ).ready( function() {
     jQuery( document )
     .on('click', 'input[type=button]', function() {
+    jQuery('#applyBtn').removeClass('closeBtn');
     jQuery('#applyBtn').addClass('formComplete');
     jQuery('#applyBtn').removeAttr('id');
+    jQuery('#applyBtn').removeClass('apply');
     });
   });
