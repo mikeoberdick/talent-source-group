@@ -68,6 +68,7 @@ body {
 				border-bottom: 5px solid transparent;
 				padding-left: 10px;
 				padding-right: 10px;
+				font-size: 20px;
 
 				&:hover {
 					border-color: $brand-primary;
@@ -197,15 +198,39 @@ body {
 			}
 	}
 
-	#ctaSection {
+	#linkedIn {
 		background-color: $brand-secondary;
+    	padding: 50px 0;
+
+    	.sectionHeader {
+			color: $brand-primary;
+			font-size: 2.5rem;
+			font-weight: bold;
+			padding-bottom: 10px;
+    		border-bottom: solid 3px;
+			}
+	}
+
+	#ctaSection {
+		background-color: $brand-primary;
+		color: #ffffff;
 		text-align: center;
     	padding: 50px 0;
-		
-		.content {
-			border: solid 5px $brand-primary;
+
+		#ctaWrapper {
+			padding: 50px;
+			border: solid 5px #ffffff;;
 		    @include border-radius(5px);
-		    padding: 50px;
+
+			h3 {
+				color: #ffffff;
+			}
+
+			.btn-primary {
+				color: $brand-primary;
+				background-color: #ffffff;
+				@include shadow;
+			}
 		}
 	}
 
@@ -239,6 +264,7 @@ body {
     	button {
     		font-family: $body-font;
     		width: 75%;
+    		@include shadow;
     		}
     	}
 	}

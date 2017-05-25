@@ -9287,7 +9287,8 @@ body {
       font-weight: bold;
       border-bottom: 5px solid transparent;
       padding-left: 10px;
-      padding-right: 10px; }
+      padding-right: 10px;
+      font-size: 20px; }
       .navbar .container #navbarNavDropdown a:hover {
         border-color: #003f6a; }
   .navbar .current-menu-item a {
@@ -9373,14 +9374,33 @@ body {
     padding-bottom: 10px;
     border-bottom: solid 3px; }
 
-.home #ctaSection {
+.home #linkedIn {
   background-color: #f2f2f2;
+  padding: 50px 0; }
+  .home #linkedIn .sectionHeader {
+    color: #003f6a;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding-bottom: 10px;
+    border-bottom: solid 3px; }
+
+.home #ctaSection {
+  background-color: #003f6a;
+  color: #ffffff;
   text-align: center;
   padding: 50px 0; }
-  .home #ctaSection .content {
-    border: solid 5px #003f6a;
-    border-radius: 5px;
-    padding: 50px; }
+  .home #ctaSection #ctaWrapper {
+    padding: 50px;
+    border: solid 5px #ffffff;
+    border-radius: 5px; }
+    .home #ctaSection #ctaWrapper h3 {
+      color: #ffffff; }
+    .home #ctaSection #ctaWrapper .btn-primary {
+      color: #003f6a;
+      background-color: #ffffff;
+      -webkit-box-shadow: 0 8px 6px -6px black;
+      -moz-box-shadow: 0 8px 6px -6px black;
+      box-shadow: 0 8px 6px -6px black; }
 
 .home .heroSection {
   background-size: cover;
@@ -9403,7 +9423,10 @@ body {
     text-transform: uppercase; }
     .home .heroSection .hpButtons button {
       font-family: "Montserrat", sans-serif;
-      width: 75%; }
+      width: 75%;
+      -webkit-box-shadow: 0 8px 6px -6px black;
+      -moz-box-shadow: 0 8px 6px -6px black;
+      box-shadow: 0 8px 6px -6px black; }
 
 .jobPosting {
   padding: 25px 0;
