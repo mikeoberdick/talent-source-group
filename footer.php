@@ -17,16 +17,20 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 	<div id = "footerWidgets" class = "row">
 
-		<div class = "col-lg-4 col-sm-12">
+		<div class = "col-lg-3 col-sm-12">
 			<?php dynamic_sidebar('footer_1'); ?>
 		</div>
 		
-		<div class = "col-lg-4 col-sm-12">
+		<div class = "col-lg-3 col-sm-12">
 			<?php dynamic_sidebar('footer_2'); ?>
 		</div>
 		
-		<div class = "col-lg-4 col-sm-12">
+		<div class = "col-lg-3 col-sm-12">
 			<?php dynamic_sidebar('footer_3'); ?>
+		</div>
+
+		<div class = "col-lg-3 col-sm-12">
+			<?php dynamic_sidebar('footer_4'); ?>
 		</div>
 
 	</div><!-- #footerWidgets -->

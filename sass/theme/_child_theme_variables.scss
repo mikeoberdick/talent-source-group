@@ -20,6 +20,11 @@ $body-font:             'Montserrat', sans-serif;
 
 //Mix-Ins
 
+//Text Shadow
+@mixin text-shadow {
+    text-shadow: 0 0 15px #000;
+}
+
 //Drop Shadow
 @mixin shadow {
   -webkit-box-shadow: 0 8px 6px -6px black;

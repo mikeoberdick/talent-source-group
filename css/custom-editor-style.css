@@ -9269,12 +9269,12 @@ body {
   display: flex;
   justify-content: center; }
   #logoContainer #headerLogo {
-    height: 125px; }
+    height: 112px; }
 
 .navbar {
   background-color: #f2f2f2;
-  padding-top: 30px;
-  padding-bottom: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   -webkit-box-shadow: 0 8px 6px -6px black;
   -moz-box-shadow: 0 8px 6px -6px black;
   box-shadow: 0 8px 6px -6px black; }
@@ -9288,7 +9288,7 @@ body {
       border-bottom: 5px solid transparent;
       padding-left: 10px;
       padding-right: 10px;
-      font-size: 20px; }
+      font-size: 18px; }
       .navbar .container #navbarNavDropdown a:hover {
         border-color: #003f6a; }
   .navbar .current-menu-item a {
@@ -9363,11 +9363,13 @@ body {
   .home .solutions i {
     font-size: 60px; }
 
-.home .practiceAreas {
+.home .representativeAreas {
   background-color: #003f6a;
   color: #ffffff;
   padding: 50px 0; }
-  .home .practiceAreas .sectionHeader {
+  .home .representativeAreas h3 {
+    color: #ffffff; }
+  .home .representativeAreas .sectionHeader {
     color: #ffffff;
     font-size: 2.5rem;
     font-weight: bold;
@@ -9405,10 +9407,10 @@ body {
 .home .heroSection {
   background-size: cover;
   background-position: center center;
-  min-height: 450px; }
+  min-height: 550px; }
   .home .heroSection .opacityLayer {
-    min-height: 450px;
-    background-color: rgba(0, 0, 0, 0.5);
+    min-height: 550px;
+    background-color: rgba(0, 0, 0, 0.3);
     display: flex;
     flex-direction: column;
     justify-content: center; }
@@ -9417,7 +9419,9 @@ body {
     flex-direction: column;
     justify-content: center; }
   .home .heroSection .hpCTA {
-    color: #ffffff; }
+    color: #ffffff;
+    font-size: 65px;
+    text-shadow: 0 0 15px #000; }
   .home .heroSection .hpButtons {
     justify-content: center;
     text-transform: uppercase; }
@@ -9431,9 +9435,9 @@ body {
 .jobPosting {
   padding: 25px 0;
   text-decoration: none; }
-  .jobPosting:nth-child(odd) {
-    background-color: #deecf3; }
   .jobPosting:nth-child(even) {
+    background-color: #deecf3; }
+  .jobPosting:nth-child(odd) {
     background-color: #e3e3e3; }
   .jobPosting:hover {
     background-color: #003f6a;
@@ -9503,7 +9507,7 @@ body {
   padding-top: 0;
   padding-bottom: 0;
   text-transform: uppercase;
-  font-size: 16px; }
+  font-size: 12px; }
   #wrapper-footer #footerWidgets {
     padding: 50px 0; }
   #wrapper-footer h5 {
@@ -9517,6 +9521,7 @@ body {
     padding-left: 0;
     list-style: none; }
     #wrapper-footer ul li {
+      float: none;
       margin-bottom: 5px; }
       #wrapper-footer ul li a {
         color: #003f6a;

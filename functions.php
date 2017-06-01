@@ -11,6 +11,11 @@
 require get_stylesheet_directory() . '/inc/acf.php';
 
 /**
+ * Setup Custom Post Types
+ */
+require get_stylesheet_directory() . '/inc/cpt.php';
+
+/**
  * Setup Dashboard
  */
 require get_stylesheet_directory() . '/inc/dashboard.php';

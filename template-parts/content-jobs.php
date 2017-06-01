@@ -24,17 +24,32 @@ $custom_query_args = array(
 );
 
 $custom_query = new WP_Query( $custom_query_args ); ?>
-<div id = "currentJobs" class = "row mb-5">
+<div id = "currentJobs" class = "row mt-3 mb-5">
     <div class = "col-sm-12">
       <article <?php post_class(); ?>>
+  <div class = "row">
+      <div class = "col-sm-2"><h5>Posted</h5></div>
+      <div class = "col-sm-4"><h5>Position</h5></div>
+      <div class = "col-sm-3"><h5>Location</h5></div>
+      <div class = "col-sm-3"><h5>Industry</h5></div>
+  </div>
+
 <?php if ( $custom_query->have_posts() ) :
     while( $custom_query->have_posts() ) : $custom_query->the_post(); ?>
             
             <a class = "jobPosting row" href="<?php the_permalink(); ?>">
             
               <div class = "col-sm-2"><?php echo get_the_date( 'm/d/Y' ); ?></div>
-              <div class = "col-sm-9"><h5><?php the_title(); ?></h5></div>
+              <div class = "col-sm-4"><h5><?php the_title(); ?></h5></div>
+              <div class = "col-sm-3"><?php the_field('location'); ?></div>
 
+              <?php
+                $termID = get_field('industry');
+                $taxonomy = 'job-industry';
+                $term = get_term_by( 'id', $termID, $taxonomy );
+                $name = $term->name;
+              ?>
+              <div class = "col-sm-3"><?php echo $name; ?></div>
             </a>
     <?php
     endwhile;
