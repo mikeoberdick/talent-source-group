@@ -29,12 +29,12 @@
 				<div class="col-sm-6 mt-5 mb-3">
 					<i class="fa fa-handshake-o mb-3" aria-hidden="true"></i>
 					<h3>Permanent Placement</h3>
-					<p><?php the_field('pp_blurb'); ?>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus est quidem aperiam, soluta quisquam officia hic magnam distinctio voluptates excepturi veniam eum consequuntur commodi sit corrupti harum! Eius, quam assumenda.</p>
+					<p><?php the_field('pp_blurb'); ?></p>
 				</div><!-- .col-sm-6 -->
 				<div class="col-sm-6 mt-5 mb-3">
 					<i class="fa fa-file-text mb-3" aria-hidden="true"></i>
 					<h3>Contract or Contract-to-Hire</h3>
-					<p><?php the_field('cth_blurb'); ?>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea aliquam modi impedit, hic, laborum repellat dolore! Numquam maxime modi, distinctio itaque! Eius eveniet cumque veritatis ipsam, totam a, enim dolor.</p>
+					<p><?php the_field('cth_blurb'); ?></p>
 				</div><!-- .col-sm-6 -->
 		</div><!-- .row -->
 	</div><!-- .container -->

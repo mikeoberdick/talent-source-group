@@ -23,11 +23,25 @@ body {
 }
 
 .entry-header {
-	margin-bottom: 1.5rem;
+	background-position: center center;
 }
 
 .lightbox {
 	display: none;
+}
+
+.titleWrapper {
+	background-color: rgba(0,0,0,.3);
+
+	.page_header {
+		color: #fff;
+	    font-size: 8vh;
+	    padding: 100px 50px;
+	    text-align: center;
+	    text-transform: uppercase;
+	    text-rendering: optimizeLegibility;
+	    @include text-shadow;
+	}
 }
 
 /*------------------------------------------------*/
@@ -355,6 +369,13 @@ body {
     	border-color: #001a28 !important;
     }
 }
+
+// Solutions
+
+.solutionIcon {
+		color: $brand-primary;
+		font-size: 60px;
+	}
 
 // Blog
 

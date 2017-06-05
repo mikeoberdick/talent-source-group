@@ -1,13 +1,5 @@
 <div class="container pio-imperati">
 
-<div class="row">
-	<div class = "col-sm-12">
-		<header class="entry-header">
-			<?php the_title( '<h1>', '</h1>' ); ?>
-		</header><!-- .entry-header -->
-	</div>			
-</div><!-- .row -->
-
 	<div class="row">
 		<div class = "col-sm-8">
 			<p><?php the_field('bio'); ?></p>

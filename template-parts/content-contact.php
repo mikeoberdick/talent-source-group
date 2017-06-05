@@ -1,13 +1,5 @@
 <div class="container about-the-firm">
 	<div class="row">
-		<div class = "col-sm-12">
-			<header class="entry-header">
-				<?php the_title( '<h1>', '</h1>' ); ?>
-			</header><!-- .entry-header -->
-		</div>			
-	</div><!-- .row -->
-
-	<div class="row">
 		<div class = "col-sm-6 contactInfo">
 			<h3>Phone</h3>
 				<a href = "tel:<?php the_field('phone', 'option'); ?>"><?php the_field('phone', 'option'); ?></a>

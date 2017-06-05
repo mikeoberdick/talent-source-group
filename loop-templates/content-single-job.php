@@ -25,8 +25,7 @@
 </div><!-- .row -->
 
 <div id = "application">
-	<h3>Apply for <?php the_title(); ?></h3>
-		<?php echo do_shortcode('[ninja_form id=2]'); ?>
+	<?php echo do_shortcode('[ninja_form id=2]'); ?>
 </div>
 
 	<div class="entry-content">

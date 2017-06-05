@@ -14,6 +14,27 @@ get_header();
 
 ?>
 
+<?php
+
+if ( has_post_thumbnail() ) { ?>
+	
+<header class="entry-header" style = "background-image: url('<?php the_post_thumbnail_url(); ?>')">
+	<div class = "titleWrapper">
+	<?php the_title( '<h1 class="entry-title page_header">', '</h1>' ); ?>
+	</div>
+</header><!-- .entry-header -->
+	
+	<?php }
+	else { ?>
+
+    <header class="entry-header" style = "background-image: url( <?php echo get_stylesheet_directory_uri() . '/img/header_bg.jpg';?>)">
+    	<div class = "titleWrapper">
+		<?php the_title( '<h1 class="entry-title page_header">', '</h1>' ); ?>
+		</div>
+	</header><!-- .entry-header -->
+	
+	<?php } ?>
+
 <div class="wrapper" id="page-wrapper">
 
 <div id = "sideTabs">
@@ -29,12 +50,20 @@ get_header();
 		get_template_part( 'template-parts/content', 'home' );
 	}
 
+	else if ( is_page( 'about-the-firm' ) ) {
+		get_template_part( 'template-parts/content', 'about-the-firm' );
+	}
+
 	else if ( is_page( 'pio-imperati' ) ) {
 		get_template_part( 'template-parts/content', 'pio-imperati' );
 	}
 
-	else if ( is_page( 'about-the-firm' ) ) {
-		get_template_part( 'template-parts/content', 'about-the-firm' );
+	else if ( is_page( 'solutions' ) ) {
+		get_template_part( 'template-parts/content', 'solutions' );
+	}
+
+	else if ( is_page( 'representative-areas' ) ) {
+		get_template_part( 'template-parts/content', 'representative_areas' );
 	}
 
 	else if ( is_page ( 'current-jobs' ) ) {
@@ -52,6 +81,8 @@ get_header();
 	else if ( is_page( 'contact' ) ) {
 		get_template_part( 'template-parts/content', 'contact' );
 	}
+
+	
 
 	else {
 	get_template_part( 'loop-templates/content', 'page' );

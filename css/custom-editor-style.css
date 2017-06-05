@@ -9253,10 +9253,21 @@ body {
   font-family: "Montserrat", sans-serif; }
 
 .entry-header {
-  margin-bottom: 1.5rem; }
+  background-position: center center; }
 
 .lightbox {
   display: none; }
+
+.titleWrapper {
+  background-color: rgba(0, 0, 0, 0.3); }
+  .titleWrapper .page_header {
+    color: #fff;
+    font-size: 8vh;
+    padding: 100px 50px;
+    text-align: center;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+    text-shadow: 0 0 15px #000; }
 
 /*------------------------------------------------*/
 /*---------------[MAIN LAYOUT INFO]---------------*/
@@ -9477,6 +9488,10 @@ body {
   .formSubmit:hover {
     background-color: #002132 !important;
     border-color: #001a28 !important; }
+
+.solutionIcon {
+  color: #003f6a;
+  font-size: 60px; }
 
 .blog .entry-title a:hover {
   text-decoration: none; }

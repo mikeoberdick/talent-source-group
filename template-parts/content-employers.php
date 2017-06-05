@@ -2,9 +2,6 @@
 
 <div class="row">
 	<div class = "col-sm-8">
-		<header class="entry-header">
-			<?php the_title( '<h1>', '</h1>' ); ?>
-		</header><!-- .entry-header -->
 		<?php the_content(); ?>
 	</div>			
 
