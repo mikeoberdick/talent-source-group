@@ -16,24 +16,27 @@ get_header();
 
 <?php
 
-if ( has_post_thumbnail() ) { ?>
-	
-<header class="entry-header" style = "background-image: url('<?php the_post_thumbnail_url(); ?>')">
-	<div class = "titleWrapper">
-	<?php the_title( '<h1 class="entry-title page_header">', '</h1>' ); ?>
-	</div>
-</header><!-- .entry-header -->
-	
-	<?php }
-	else { ?>
+if ( !is_page('homepage' ) ) {
 
-    <header class="entry-header" style = "background-image: url( <?php echo get_stylesheet_directory_uri() . '/img/header_bg.jpg';?>)">
-    	<div class = "titleWrapper">
+	if ( has_post_thumbnail() ) { ?>
+		
+	<header class="entry-header" style = "background-image: url('<?php the_post_thumbnail_url(); ?>')">
+		<div class = "titleWrapper">
 		<?php the_title( '<h1 class="entry-title page_header">', '</h1>' ); ?>
 		</div>
 	</header><!-- .entry-header -->
-	
-	<?php } ?>
+		
+		<?php }
+		else { ?>
+
+	    <header class="entry-header" style = "background-image: url( <?php echo get_stylesheet_directory_uri() . '/img/header_bg.jpg';?>)">
+	    	<div class = "titleWrapper">
+			<?php the_title( '<h1 class="entry-title page_header">', '</h1>' ); ?>
+			</div>
+		</header><!-- .entry-header -->
+		
+		<?php } 
+	} ?>
 
 <div class="wrapper" id="page-wrapper">
 

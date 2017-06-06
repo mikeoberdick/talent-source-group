@@ -20,7 +20,7 @@
 	</div><!-- #opacityLayer -->	
 </div><!-- .container-fluid -->
 
-<div class = "container-fluid solutions">
+<div class = "container-fluid hpSection" id = "solutions">
 	<div class="container text-center">
 		<div class="row">
 			<div class="col-sm-12 ">
@@ -40,7 +40,7 @@
 	</div><!-- .container -->
 </div><!-- .container-fluid -->
 
-<div class = "container-fluid representativeAreas">
+<div class = "container-fluid hpSection" id = "representativeAreas">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
@@ -51,7 +51,7 @@
 				<?php the_field('practice_areas_left'); ?>
 			</div><!-- .col-sm-6 -->
 
-			<div class="col-sm-6  mt-5 mb-3">
+			<div class="col-sm-6 mb-3">
 				<?php the_field('practice_areas_right'); ?>
 			</div><!-- .col-sm-6 -->
 
@@ -59,18 +59,26 @@
 	</div><!-- .container -->
 </div><!-- .container-fluid -->
 
-<div class="container-fluid" id="linkedIn">
+<div class="container-fluid hpSection" id="linkedIn">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12 content">
-				<h3 class = "sectionHeader mb-5">LinkedIn Content Here</h3>
-	<a class = "btn btn-primary btn-large mt-5" href="#">Check out TSG on Linked IN</a>
+				<h3 class = "sectionHeader mb-5">Pio Imperati</h3>
 			</div><!-- .col-sm-12 -->
+
+			<div class="col-sm-6">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex minus doloribus, quasi architecto dolore qui molestias repudiandae, eius ipsum temporibus atque deserunt reprehenderit! Magni fugit placeat dicta, natus tenetur? In.</p>
+			</div>
+
+			<div class="col-sm-6">
+				<script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
+				<script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/imperati/" data-format="inline" data-related="false"></script>
+			</div>
 		</div><!-- .row -->
 	</div><!-- .container -->
 </div><!-- #ctaSection.container-fluid -->
 
-<div class="container-fluid" id="ctaSection">
+<div class="container-fluid hpSection" id="ctaSection">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">

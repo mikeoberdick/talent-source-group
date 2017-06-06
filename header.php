@@ -28,8 +28,21 @@ $container = get_theme_mod( 'understrap_container_type' );
 <div class="hfeed site" id="page">
 
 <div id = "logoContainer">
-
-	<a href = "<?php echo site_url(); ?>"><img id = "headerLogo" src = "<?php the_field('company_logo', 'option'); ?>" alt = "<?php echo bloginfo('name') ?>"></a>
+	<div class = "container">
+		<div class = "row">
+			<div class = "col-sm-3 mt-3 headerPhone">
+				<h5>Fairfield County Office</h5>
+				<p><?php the_field('fairfield_phone', 'option'); ?></p>
+			</div>
+			
+			<a class = "col-sm-6 text-center" href ="<?php echo site_url(); ?>"><img id = "headerLogo" src = "<?php the_field('company_logo', 'option'); ?>" alt = "<?php echo bloginfo('name') ?>"></a>
+			
+			<div class = "col-sm-3 mt-3 headerPhone">
+				<h5>New Haven/Hartford Office</h5>
+				<p><?php the_field('nh_phone', 'option'); ?></p>
+			</div>
+		</div>
+	</div>
 </div><!-- #logoContainer -->
 
 	<!-- ******************* The Navbar Area ******************* -->

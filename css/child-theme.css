@@ -9253,7 +9253,8 @@ body {
   font-family: "Montserrat", sans-serif; }
 
 .entry-header {
-  background-position: center center; }
+  background-position: center center;
+  background-size: cover; }
 
 .lightbox {
   display: none; }
@@ -9278,9 +9279,15 @@ body {
 #logoContainer {
   background-color: #003f6a;
   display: flex;
-  justify-content: center; }
+  justify-content: space-around; }
   #logoContainer #headerLogo {
     height: 112px; }
+  #logoContainer .headerPhone {
+    text-align: center;
+    align-self: center;
+    color: #ffe200; }
+    #logoContainer .headerPhone h5 {
+      color: #fff; }
 
 .navbar {
   background-color: #f2f2f2;
@@ -9304,13 +9311,19 @@ body {
         border-color: #003f6a; }
   .navbar .current-menu-item a {
     border-color: #003f6a !important; }
+  .navbar .dropdown-menu .menu-item .nav-link {
+    border: 0 !important; }
+    .navbar .dropdown-menu .menu-item .nav-link:hover {
+      background-color: transparent;
+      border: 0 !important; }
 
 #sideTabs {
   position: fixed;
   top: 5px;
   right: 0;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  z-index: 1; }
   #sideTabs i {
     margin-right: 5px; }
   #sideTabs a {
@@ -9360,61 +9373,6 @@ body {
 .home #page-wrapper {
   padding: 0; }
 
-.home .solutions {
-  background-color: #f2f2f2;
-  color: #003f6a;
-  padding: 50px 0; }
-  .home .solutions .sectionHeader {
-    text-align: left;
-    color: #003f6a;
-    font-size: 2.5rem;
-    font-weight: bold;
-    padding-bottom: 10px;
-    border-bottom: solid 3px; }
-  .home .solutions i {
-    font-size: 60px; }
-
-.home .representativeAreas {
-  background-color: #003f6a;
-  color: #ffffff;
-  padding: 50px 0; }
-  .home .representativeAreas h3 {
-    color: #ffffff; }
-  .home .representativeAreas .sectionHeader {
-    color: #ffffff;
-    font-size: 2.5rem;
-    font-weight: bold;
-    padding-bottom: 10px;
-    border-bottom: solid 3px; }
-
-.home #linkedIn {
-  background-color: #f2f2f2;
-  padding: 50px 0; }
-  .home #linkedIn .sectionHeader {
-    color: #003f6a;
-    font-size: 2.5rem;
-    font-weight: bold;
-    padding-bottom: 10px;
-    border-bottom: solid 3px; }
-
-.home #ctaSection {
-  background-color: #003f6a;
-  color: #ffffff;
-  text-align: center;
-  padding: 50px 0; }
-  .home #ctaSection #ctaWrapper {
-    padding: 50px;
-    border: solid 5px #ffffff;
-    border-radius: 5px; }
-    .home #ctaSection #ctaWrapper h3 {
-      color: #ffffff; }
-    .home #ctaSection #ctaWrapper .btn-primary {
-      color: #003f6a;
-      background-color: #ffffff;
-      -webkit-box-shadow: 0 8px 6px -6px black;
-      -moz-box-shadow: 0 8px 6px -6px black;
-      box-shadow: 0 8px 6px -6px black; }
-
 .home .heroSection {
   background-size: cover;
   background-position: center center;
@@ -9439,6 +9397,46 @@ body {
     .home .heroSection .hpButtons button {
       font-family: "Montserrat", sans-serif;
       width: 75%;
+      -webkit-box-shadow: 0 8px 6px -6px black;
+      -moz-box-shadow: 0 8px 6px -6px black;
+      box-shadow: 0 8px 6px -6px black; }
+
+.home .hpSection {
+  padding: 50px 0; }
+  .home .hpSection .sectionHeader {
+    text-align: left;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding-bottom: 10px;
+    border-bottom: solid 3px; }
+  .home .hpSection:nth-child(odd) {
+    background-color: #f2f2f2;
+    color: #003f6a; }
+    .home .hpSection:nth-child(odd) .sectionHeader {
+      color: #003f6a; }
+  .home .hpSection:nth-child(even) {
+    background-color: #003f6a;
+    color: #ffffff; }
+    .home .hpSection:nth-child(even) .sectionHeader {
+      color: #ffffff; }
+
+.home #solutions i {
+  font-size: 60px; }
+
+.home #representativeAreas h3 {
+  color: #ffffff; }
+
+.home #ctaSection {
+  text-align: center; }
+  .home #ctaSection #ctaWrapper {
+    padding: 50px;
+    border: solid 5px #ffffff;
+    border-radius: 5px; }
+    .home #ctaSection #ctaWrapper h3 {
+      color: #ffffff; }
+    .home #ctaSection #ctaWrapper .btn-primary {
+      color: #003f6a;
+      background-color: #ffffff;
       -webkit-box-shadow: 0 8px 6px -6px black;
       -moz-box-shadow: 0 8px 6px -6px black;
       box-shadow: 0 8px 6px -6px black; }
@@ -9532,12 +9530,15 @@ body {
     color: #003f6a; }
   #wrapper-footer i {
     color: #003f6a; }
+  #wrapper-footer .sub-menu {
+    margin-left: 5px; }
   #wrapper-footer ul {
     padding-left: 0;
     list-style: none; }
     #wrapper-footer ul li {
       float: none;
-      margin-bottom: 5px; }
+      margin-bottom: 5px;
+      display: block; }
       #wrapper-footer ul li a {
         color: #003f6a;
         text-transform: uppercase;
