@@ -103,6 +103,12 @@ body {
 		}
 	}
 
+	.hideJobs {
+		.current_jobs {
+			display: none;
+		}
+	}
+
 	.current-menu-item {
 
 	a {
@@ -142,7 +148,7 @@ body {
     	right: -145px;
     	color: $brand-primary;
     	background-color: $brand-secondary;
-    	padding: 15px 10px;
+    	padding: 10px;
     	text-transform: uppercase;
     	text-decoration: none;
     	transition: all .5s;
@@ -291,12 +297,7 @@ body {
 	#ctaSection {
 		text-align: center;
 
-		#ctaWrapper {
-			padding: 50px;
-			border: solid 5px #ffffff;;
-		    @include border-radius(5px);
-
-			h3 {
+			h5 {
 				color: #ffffff;
 			}
 
@@ -304,9 +305,9 @@ body {
 				color: $brand-primary;
 				background-color: #ffffff;
 				@include shadow;
+				padding: 20px 15px;
 			}
 		}
-	}
 
 }
 

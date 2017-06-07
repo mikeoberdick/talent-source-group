@@ -9249,7 +9249,7 @@ h1, h2, h3, h4, h5 {
   font-family: "Cabin", sans-serif; }
 
 body {
-  color: #b2b2b2;
+  color: #000;
   font-family: "Montserrat", sans-serif; }
 
 .entry-header {
@@ -9309,6 +9309,8 @@ body {
       font-size: 18px; }
       .navbar .container #navbarNavDropdown a:hover {
         border-color: #003f6a; }
+  .navbar .hideJobs .current_jobs {
+    display: none; }
   .navbar .current-menu-item a {
     border-color: #003f6a !important; }
   .navbar .dropdown-menu .menu-item .nav-link {
@@ -9331,7 +9333,7 @@ body {
     right: -145px;
     color: #003f6a;
     background-color: #f2f2f2;
-    padding: 15px 10px;
+    padding: 10px;
     text-transform: uppercase;
     text-decoration: none;
     transition: all .5s; }
@@ -9428,18 +9430,15 @@ body {
 
 .home #ctaSection {
   text-align: center; }
-  .home #ctaSection #ctaWrapper {
-    padding: 50px;
-    border: solid 5px #ffffff;
-    border-radius: 5px; }
-    .home #ctaSection #ctaWrapper h3 {
-      color: #ffffff; }
-    .home #ctaSection #ctaWrapper .btn-primary {
-      color: #003f6a;
-      background-color: #ffffff;
-      -webkit-box-shadow: 0 8px 6px -6px black;
-      -moz-box-shadow: 0 8px 6px -6px black;
-      box-shadow: 0 8px 6px -6px black; }
+  .home #ctaSection h5 {
+    color: #ffffff; }
+  .home #ctaSection .btn-primary {
+    color: #003f6a;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 8px 6px -6px black;
+    padding: 20px 15px; }
 
 .jobPosting {
   padding: 25px 0;
@@ -9464,7 +9463,7 @@ body {
   display: none; }
 
 .contactInfo a {
-  color: #b2b2b2;
+  color: #000;
   text-decoration: none; }
 
 .contactInfo .acf-map {

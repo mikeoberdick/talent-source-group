@@ -31,14 +31,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<div class = "container">
 		<div class = "row">
 			<div class = "col-sm-3 mt-3 headerPhone">
-				<h5>Fairfield County Office</h5>
+				<h5>Westchester/Fairfield County</h5>
 				<p><?php the_field('fairfield_phone', 'option'); ?></p>
 			</div>
 			
 			<a class = "col-sm-6 text-center" href ="<?php echo site_url(); ?>"><img id = "headerLogo" src = "<?php the_field('company_logo', 'option'); ?>" alt = "<?php echo bloginfo('name') ?>"></a>
 			
 			<div class = "col-sm-3 mt-3 headerPhone">
-				<h5>New Haven/Hartford Office</h5>
+				<h5>New Haven/Hartford County</h5>
 				<p><?php the_field('nh_phone', 'option'); ?></p>
 			</div>
 		</div>
@@ -60,6 +60,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
+				
+				<?php 
+				// Check to see how many jobs are currently posted and below conditionally show the jobs menu link if there are three or more jobs
+					$job_count = wp_count_posts( 'jobs' )->publish; ?>
 					
 				<!-- The WordPress Menu goes here -->
 				<?php wp_nav_menu(
@@ -67,7 +71,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						'theme_location'  => 'primary',
 						'container_class' => 'collapse navbar-collapse',
 						'container_id'    => 'navbarNavDropdown',
-						'menu_class'      => 'navbar-nav',
+						'menu_class'      => ($job_count >= 3 ? 'navbar-nav' : 'navbar-nav hideJobs'),
 						'fallback_cb'     => '',
 						'menu_id'         => 'main-menu',
 						'walker'          => new WP_Bootstrap_Navwalker(),

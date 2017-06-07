@@ -78,16 +78,22 @@
 	</div><!-- .container -->
 </div><!-- #ctaSection.container-fluid -->
 
-<div class="container-fluid hpSection" id="ctaSection">
+<div class="container-fluid hpSection">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
-				<div id = "ctaWrapper">
-					<h3>Let's Talk</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae sunt ea minima!</p>
-							<a class = "btn btn-primary btn-large" href="<?php echo bloginfo('url'); ?>/contact">Contact Talent Source Group</a>
-				</div>
+				<h3 class = "sectionHeader mb-5">Let's Connect</h3>
 			</div><!-- .col-sm-12 -->
+		</div>
+				
+			<div class="row" id = "ctaSection">
+				<div class = "col-sm-8">
+					<h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae sunt ea minima!</h5>
+				</div>
+					
+				<div class = "col-sm-4">
+					<a class = "btn btn-primary btn-large" href="<?php echo bloginfo('url'); ?>/contact">Contact Talent Source Group</a>		
+				</div>
 		</div><!-- .row -->
 	</div><!-- .container -->
 </div><!-- #ctaSection.container-fluid -->
