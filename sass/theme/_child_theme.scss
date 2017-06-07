@@ -295,10 +295,11 @@ body {
 
 
 	#ctaSection {
-		text-align: center;
+		    align-items: center;
 
 			h5 {
 				color: #ffffff;
+				margin-bottom: 0;
 			}
 
 			.btn-primary {
@@ -306,6 +307,11 @@ body {
 				background-color: #ffffff;
 				@include shadow;
 				padding: 20px 15px;
+
+				a {
+					font-weight:bold;
+					text-transform: uppercase;
+				}
 			}
 		}
 

@@ -88,11 +88,11 @@
 				
 			<div class="row" id = "ctaSection">
 				<div class = "col-sm-8">
-					<h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae sunt ea minima!</h5>
+					<h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae sunt ea minima! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae sunt ea minim</h5>
 				</div>
 					
 				<div class = "col-sm-4">
-					<a class = "btn btn-primary btn-large" href="<?php echo bloginfo('url'); ?>/contact">Contact Talent Source Group</a>		
+					<a class = "btn btn-primary btn-large" href="<?php echo bloginfo('url'); ?>/contact">Contact TSG</a>		
 				</div>
 		</div><!-- .row -->
 	</div><!-- .container -->
