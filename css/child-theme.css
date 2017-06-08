@@ -9270,9 +9270,17 @@ body {
     text-rendering: optimizeLegibility;
     text-shadow: 0 0 15px #000; }
 
+.alignLeft {
+  padding-right: 25px; }
+
 /*------------------------------------------------*/
 /*---------------[MAIN LAYOUT INFO]---------------*/
 /*------------------------------------------------*/
+.sectionHeader {
+  font-weight: bold;
+  padding-bottom: 10px;
+  border-bottom: solid 3px; }
+
 /*------------------------------------------------*/
 /*--------------------[HEADER]--------------------*/
 /*------------------------------------------------*/
@@ -9407,10 +9415,7 @@ body {
   padding: 50px 0; }
   .home .hpSection .sectionHeader {
     text-align: left;
-    font-size: 2.5rem;
-    font-weight: bold;
-    padding-bottom: 10px;
-    border-bottom: solid 3px; }
+    font-size: 2.5rem; }
   .home .hpSection:nth-child(odd) {
     background-color: #f2f2f2;
     color: #003f6a; }
@@ -9439,10 +9444,10 @@ body {
     -webkit-box-shadow: 0 8px 6px -6px black;
     -moz-box-shadow: 0 8px 6px -6px black;
     box-shadow: 0 8px 6px -6px black;
-    padding: 20px 15px; }
-    .home #ctaSection .btn-primary a {
-      font-weight: bold;
-      text-transform: uppercase; }
+    padding: 20px 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 100%; }
 
 .jobPosting {
   padding: 25px 0;
@@ -9490,7 +9495,18 @@ body {
     background-color: #002132 !important;
     border-color: #001a28 !important; }
 
-.solutionIcon {
+.quote {
+  background-color: #003f6a;
+  margin: 25px 0 0;
+  padding: 50px; }
+  .quote h3 {
+    color: #fff;
+    margin-bottom: 0;
+    font-size: 6vh;
+    font-family: "Playfair Display", serif;
+    text-align: center; }
+
+.solutionBlurbs i {
   color: #003f6a;
   font-size: 60px; }
 
@@ -9534,7 +9550,7 @@ body {
   #wrapper-footer i {
     color: #003f6a; }
   #wrapper-footer .sub-menu {
-    margin-left: 5px; }
+    margin-left: 15px; }
   #wrapper-footer ul {
     padding-left: 0;
     list-style: none; }
@@ -9570,6 +9586,8 @@ body {
     color: #fff; }
     #bottomFooter a:hover {
       text-decoration: none; }
+  #bottomFooter span:nth-of-type(2) {
+    font-size: 10px; }
 
 /*------------------------------------------------*/
 /*---------------[RESPONSIVE LAYOUTS]-------------*/

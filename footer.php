@@ -11,6 +11,16 @@ $the_theme = wp_get_theme();
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
+<div class="container-fluid quote">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<h3>"Our professional networks are strong, our experience is proven and our results are unmatched."</h3>
+			</div><!-- /.col-sm-12 -->
+		</div><!-- /.row -->
+	</div><!-- /.container -->
+</div><!-- /.container-fluid quote -->
+
 <div class="wrapper" id="wrapper-footer">
 
 	<div class="<?php echo esc_html( $container ); ?>">

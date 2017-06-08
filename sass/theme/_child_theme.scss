@@ -45,11 +45,19 @@ body {
 	}
 }
 
+.alignLeft {
+	padding-right: 25px;
+}
+
 /*------------------------------------------------*/
 /*---------------[MAIN LAYOUT INFO]---------------*/
 /*------------------------------------------------*/
 
-
+	.sectionHeader {
+			font-weight: bold;
+			padding-bottom: 10px;
+			border-bottom: solid 3px;
+		}
 
 /*------------------------------------------------*/
 /*--------------------[HEADER]--------------------*/
@@ -252,9 +260,6 @@ body {
 		.sectionHeader {
 			text-align: left;
 			font-size: 2.5rem;
-			font-weight: bold;
-			padding-bottom: 10px;
-			border-bottom: solid 3px;
 		}
 
 		&:nth-child(odd) {
@@ -307,11 +312,9 @@ body {
 				background-color: #ffffff;
 				@include shadow;
 				padding: 20px 15px;
-
-				a {
-					font-weight:bold;
-					text-transform: uppercase;
-				}
+				font-weight: bold;
+				text-transform: uppercase;
+				width: 100%;
 			}
 		}
 
@@ -398,10 +401,27 @@ body {
 
 // Solutions
 
-.solutionIcon {
+.quote {
+	background-color: $brand-primary;
+	margin: 25px 0 0;
+	padding: 50px;
+
+	h3 {
+		color: #fff;
+		margin-bottom: 0;
+		font-size: 6vh;
+		font-family: $nav-font;
+		text-align: center;
+	}
+}
+
+.solutionBlurbs {
+
+	i {
 		color: $brand-primary;
 		font-size: 60px;
 	}
+}
 
 // Blog
 
@@ -472,7 +492,7 @@ body {
 	}
 
 	.sub-menu {
-		margin-left: 5px;
+		margin-left: 15px;
 	}
 
 	ul {
@@ -528,6 +548,12 @@ body {
 
 		&:hover {
 			text-decoration: none;
+		}
+	}
+
+	span {
+		&:nth-of-type(2) {
+			font-size: 10px;
 		}
 	}
 }

@@ -1,5 +1,12 @@
 <div class="container">
 
+<div class="row">
+  <div class="col-sm-12">
+    <h3 class = "sectionHeader">Talent Source Group Job Listings</h3>
+      <?php the_content(); ?>
+    </div><!-- /.col-sm-12 -->
+</div>
+
 <?php
 if ( get_query_var('paged') ) {
     $paged = get_query_var('paged');
@@ -19,12 +26,6 @@ $custom_query = new WP_Query( $custom_query_args ); ?>
 <div id = "currentJobs" class = "row mt-3 mb-5">
     <div class = "col-sm-12">
       <article <?php post_class(); ?>>
-  <div class = "row">
-      <div class = "col-sm-2"><h5>Posted</h5></div>
-      <div class = "col-sm-4"><h5>Position</h5></div>
-      <div class = "col-sm-3"><h5>Location</h5></div>
-      <div class = "col-sm-3"><h5>Industry</h5></div>
-  </div>
 
 <?php if ( $custom_query->have_posts() ) :
     while( $custom_query->have_posts() ) : $custom_query->the_post(); ?>
