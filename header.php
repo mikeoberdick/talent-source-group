@@ -32,14 +32,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<div class = "row">
 			<div class = "col-sm-3 mt-3 headerPhone">
 				<h5>Westchester/Fairfield County</h5>
-				<p><?php the_field('fairfield_phone', 'option'); ?></p>
+				<p><a href = "tel:<?php the_field('fairfield_phone', 'option'); ?>"><?php the_field('fairfield_phone', 'option'); ?></a></p>
 			</div>
 			
 			<a class = "col-sm-6 text-center" href ="<?php echo site_url(); ?>"><img id = "headerLogo" src = "<?php the_field('company_logo', 'option'); ?>" alt = "<?php echo bloginfo('name') ?>"></a>
 			
 			<div class = "col-sm-3 mt-3 headerPhone">
 				<h5>New Haven/Hartford County</h5>
-				<p><?php the_field('nh_phone', 'option'); ?></p>
+				<p><a href = "tel:<?php the_field('nh_phone', 'option'); ?>"><?php the_field('nh_phone', 'option'); ?></a></p>
 			</div>
 		</div>
 	</div>

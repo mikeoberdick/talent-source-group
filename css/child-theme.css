@@ -9270,9 +9270,6 @@ body {
     text-rendering: optimizeLegibility;
     text-shadow: 0 0 15px #000; }
 
-.alignLeft {
-  padding-right: 25px; }
-
 /*------------------------------------------------*/
 /*---------------[MAIN LAYOUT INFO]---------------*/
 /*------------------------------------------------*/
@@ -9280,6 +9277,9 @@ body {
   font-weight: bold;
   padding-bottom: 10px;
   border-bottom: solid 3px; }
+
+.alignleft {
+  padding-right: 25px !important; }
 
 /*------------------------------------------------*/
 /*--------------------[HEADER]--------------------*/
@@ -9292,8 +9292,11 @@ body {
     height: 112px; }
   #logoContainer .headerPhone {
     text-align: center;
-    align-self: center;
-    color: #ffe200; }
+    align-self: center; }
+    #logoContainer .headerPhone a {
+      color: #ffe200; }
+      #logoContainer .headerPhone a:hover {
+        text-decoration: none; }
     #logoContainer .headerPhone h5 {
       color: #fff; }
 
@@ -9383,6 +9386,9 @@ body {
 .home #page-wrapper {
   padding: 0; }
 
+.home .quote {
+  display: none; }
+
 .home .heroSection {
   background-size: cover;
   background-position: center center;
@@ -9414,7 +9420,7 @@ body {
 .home .hpSection {
   padding: 50px 0; }
   .home .hpSection .sectionHeader {
-    text-align: left;
+    text-align: center;
     font-size: 2.5rem; }
   .home .hpSection:nth-child(odd) {
     background-color: #f2f2f2;
@@ -9521,6 +9527,20 @@ body {
   margin-bottom: 15px; }
   .blog article:last-of-type {
     border: 0; }
+
+.blog .assistive-text {
+  display: none; }
+
+.blog .widget {
+  margin-bottom: 25px; }
+
+.blog .widget_media_image {
+  text-align: center; }
+  .blog .widget_media_image img {
+    width: 250px;
+    -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 8px 6px -6px black; }
 
 .single .nav-links a {
   color: #ffffff; }

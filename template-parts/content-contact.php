@@ -2,7 +2,8 @@
 	<div class="row">
 		<div class = "col-sm-6 contactInfo">
 			<h3>Phone</h3>
-				<a href = "tel:<?php the_field('phone', 'option'); ?>"><?php the_field('phone', 'option'); ?></a>
+				<div class = "mb-2"><strong>Westchester/Fairfield County:</strong> <a href = "tel:<?php the_field('fairfield_phone', 'option'); ?>"><?php the_field('fairfield_phone', 'option'); ?></a></div>
+				<div><strong>New Haven/Hartford County:</strong> <a href = "tel:<?php the_field('nh_phone', 'option'); ?>"><?php the_field('nh_phone', 'option'); ?></a></div>
 			<h3 class = "mt-3">Email</h3>
 				<a href = "mailto:<?php the_field('email', 'option'); ?>"><?php the_field('email', 'option'); ?></a>
 			<h3 class = "mt-3">Address</h3>

@@ -44,11 +44,6 @@ body {
 	    @include text-shadow;
 	}
 }
-
-.alignLeft {
-	padding-right: 25px;
-}
-
 /*------------------------------------------------*/
 /*---------------[MAIN LAYOUT INFO]---------------*/
 /*------------------------------------------------*/
@@ -58,6 +53,11 @@ body {
 			padding-bottom: 10px;
 			border-bottom: solid 3px;
 		}
+
+	.alignleft {
+		padding-right: 25px !important;
+}
+
 
 /*------------------------------------------------*/
 /*--------------------[HEADER]--------------------*/
@@ -75,8 +75,15 @@ body {
 	.headerPhone {
 		text-align: center;
 		align-self: center;
+
+		a {
 		color: #ffe200;
-		
+
+		&:hover {
+			text-decoration: none;
+			}
+		}
+
 		h5 {
 			color: #fff;
 		}
@@ -217,6 +224,10 @@ body {
 		padding: 0;
 	}
 
+	.quote {
+		display: none;
+	}
+
 	.heroSection {
 	background-size: cover;
     background-position: center center;
@@ -258,7 +269,7 @@ body {
 		padding: 50px 0;
 
 		.sectionHeader {
-			text-align: left;
+			text-align: center;
 			font-size: 2.5rem;
 		}
 
@@ -444,6 +455,23 @@ body {
 		    &:last-of-type {
 		    	border: 0;
 		    }
+	}
+
+	.assistive-text {
+		display: none;
+	}
+
+	.widget {
+		margin-bottom: 25px;
+	}
+
+	.widget_media_image {
+		text-align: center;
+
+		img {
+			width: 250px;
+			@include shadow;
+		}
 	}
 }
 
