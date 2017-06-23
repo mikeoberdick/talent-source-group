@@ -2,7 +2,7 @@
 	
 	<div class="row">
 		<div class = "col-sm-12">
-			<h3 class = "sectionHeader">Solutions for Today's Professional Workforce</h3>
+			<h1 class = "sectionHeader">Solutions for Today's Professional Workforce</h1>
 		</div>
 	</div>
 <?php /*

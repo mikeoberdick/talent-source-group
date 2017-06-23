@@ -2,7 +2,7 @@
 
 <div class="row">
   <div class="col-sm-12">
-    <h3 class = "sectionHeader">Talent Source Group Job Listings</h3>
+    <h1 class = "sectionHeader">Talent Source Group Job Listings</h1>
       <?php the_content(); ?>
     </div><!-- /.col-sm-12 -->
 </div>

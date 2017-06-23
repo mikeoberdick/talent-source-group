@@ -30,14 +30,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 <div id = "logoContainer">
 	<div class = "container">
 		<div class = "row">
-			<div class = "col-sm-3 mt-3 headerPhone">
+			<div class = "col-sm-3 mt-3 headerPhone phoneFirst">
 				<h5>Westchester/Fairfield County</h5>
 				<p><a href = "tel:<?php the_field('fairfield_phone', 'option'); ?>"><?php the_field('fairfield_phone', 'option'); ?></a></p>
 			</div>
 			
 			<a class = "col-sm-6 text-center" href ="<?php echo site_url(); ?>"><img id = "headerLogo" src = "<?php the_field('company_logo', 'option'); ?>" alt = "<?php echo bloginfo('name') ?>"></a>
 			
-			<div class = "col-sm-3 mt-3 headerPhone">
+			<div class = "col-sm-3 mt-3 headerPhone phoneSecond">
 				<h5>New Haven/Hartford County</h5>
 				<p><a href = "tel:<?php the_field('nh_phone', 'option'); ?>"><?php the_field('nh_phone', 'option'); ?></a></p>
 			</div>
@@ -58,7 +58,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<?php endif; ?>
 
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
+					<span class = "mobileToggle"><i class="fa fa-bars" aria-hidden="true"></i> Menu</span>
 				</button>
 				
 				<?php 

@@ -42,6 +42,10 @@ body {
 	    text-transform: uppercase;
 	    text-rendering: optimizeLegibility;
 	    @include text-shadow;
+
+	    @include media-breakpoint-down(md) { font-size: 4vh; }
+
+
 	}
 }
 /*------------------------------------------------*/
@@ -52,6 +56,7 @@ body {
 			font-weight: bold;
 			padding-bottom: 10px;
 			border-bottom: solid 3px;
+			margin-bottom: 25px;
 		}
 
 	.alignleft {
@@ -88,6 +93,14 @@ body {
 			color: #fff;
 		}
 	}
+
+	.phoneFirst {
+		@include media-breakpoint-down(sm) { order: 2; }
+	}
+
+	.phoneSecond {
+		@include media-breakpoint-down(sm) { order: 3; }
+	}
 }
 
 .navbar {
@@ -97,10 +110,16 @@ body {
 	@include shadow;
 
 	.container {
+		width: 100%;
+		text-align: center;
+
 		#navbarNavDropdown {
 			justify-content: center;
 
 			a {
+
+				@include media-breakpoint-down(md) { border-bottom: 0; }
+
 				font-family: $nav-font;
 				color: $brand-primary;
 				text-transform: uppercase;
@@ -132,6 +151,9 @@ body {
 	}
 
 .dropdown-menu {
+
+	@include media-breakpoint-down(md) { width: 100%; text-align: center; }
+
 	.menu-item {
 		.nav-link {
 			border: 0 !important;
@@ -188,9 +210,12 @@ body {
 /*-------------------[MENU]-----------------------*/
 /*------------------------------------------------*/
 
+.mobileToggle {
+	color: $brand-primary;
+}
 
 /*------------------------------------------------*/
-/*-------------------[FORMS]-----------------------*/
+/*-------------------[FORMS]----------------------*/
 /*------------------------------------------------*/
 
 .nf-form-content input[type="submit"],
@@ -231,6 +256,7 @@ body {
 	.heroSection {
 	background-size: cover;
     background-position: center center;
+    background-attachment: fixed;
     min-height: 550px;
 
     .opacityLayer {
@@ -423,6 +449,8 @@ body {
 		font-size: 6vh;
 		font-family: $nav-font;
 		text-align: center;
+
+		@include media-breakpoint-down(md) { font-size: 4vh; }
 	}
 }
 
@@ -547,6 +575,16 @@ body {
 	#footerSocialIcons {
 		font-size: 50px;
    		color: #004265;
+	}
+
+	.footerPhone {
+		span {
+			display: block;
+		    font-weight: bold;
+		    font-size: 12px;
+		    margin-bottom: 5px;
+		    font-style: italic;
+		}
 	}
 
 	#address {

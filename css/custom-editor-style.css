@@ -9269,6 +9269,9 @@ body {
     text-transform: uppercase;
     text-rendering: optimizeLegibility;
     text-shadow: 0 0 15px #000; }
+    @media (max-width: 991px) {
+      .titleWrapper .page_header {
+        font-size: 4vh; } }
 
 /*------------------------------------------------*/
 /*---------------[MAIN LAYOUT INFO]---------------*/
@@ -9276,7 +9279,8 @@ body {
 .sectionHeader {
   font-weight: bold;
   padding-bottom: 10px;
-  border-bottom: solid 3px; }
+  border-bottom: solid 3px;
+  margin-bottom: 25px; }
 
 .alignleft {
   padding-right: 25px !important; }
@@ -9299,6 +9303,12 @@ body {
         text-decoration: none; }
     #logoContainer .headerPhone h5 {
       color: #fff; }
+  @media (max-width: 767px) {
+    #logoContainer .phoneFirst {
+      order: 2; } }
+  @media (max-width: 767px) {
+    #logoContainer .phoneSecond {
+      order: 3; } }
 
 .navbar {
   background-color: #f2f2f2;
@@ -9307,23 +9317,33 @@ body {
   -webkit-box-shadow: 0 8px 6px -6px black;
   -moz-box-shadow: 0 8px 6px -6px black;
   box-shadow: 0 8px 6px -6px black; }
-  .navbar .container #navbarNavDropdown {
-    justify-content: center; }
-    .navbar .container #navbarNavDropdown a {
-      font-family: "Playfair Display", serif;
-      color: #003f6a;
-      text-transform: uppercase;
-      font-weight: bold;
-      border-bottom: 5px solid transparent;
-      padding-left: 10px;
-      padding-right: 10px;
-      font-size: 18px; }
-      .navbar .container #navbarNavDropdown a:hover {
-        border-color: #003f6a; }
+  .navbar .container {
+    width: 100%;
+    text-align: center; }
+    .navbar .container #navbarNavDropdown {
+      justify-content: center; }
+      .navbar .container #navbarNavDropdown a {
+        font-family: "Playfair Display", serif;
+        color: #003f6a;
+        text-transform: uppercase;
+        font-weight: bold;
+        border-bottom: 5px solid transparent;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 18px; }
+        @media (max-width: 991px) {
+          .navbar .container #navbarNavDropdown a {
+            border-bottom: 0; } }
+        .navbar .container #navbarNavDropdown a:hover {
+          border-color: #003f6a; }
   .navbar .hideJobs .current_jobs {
     display: none; }
   .navbar .current-menu-item a {
     border-color: #003f6a !important; }
+  @media (max-width: 991px) {
+    .navbar .dropdown-menu {
+      width: 100%;
+      text-align: center; } }
   .navbar .dropdown-menu .menu-item .nav-link {
     border: 0 !important; }
     .navbar .dropdown-menu .menu-item .nav-link:hover {
@@ -9359,8 +9379,11 @@ body {
 /*------------------------------------------------*/
 /*-------------------[MENU]-----------------------*/
 /*------------------------------------------------*/
+.mobileToggle {
+  color: #003f6a; }
+
 /*------------------------------------------------*/
-/*-------------------[FORMS]-----------------------*/
+/*-------------------[FORMS]----------------------*/
 /*------------------------------------------------*/
 .nf-form-content input[type="submit"],
 .nf-form-content input[type="button"],
@@ -9392,6 +9415,7 @@ body {
 .home .heroSection {
   background-size: cover;
   background-position: center center;
+  background-attachment: fixed;
   min-height: 550px; }
   .home .heroSection .opacityLayer {
     min-height: 550px;
@@ -9511,6 +9535,9 @@ body {
     font-size: 6vh;
     font-family: "Playfair Display", serif;
     text-align: center; }
+    @media (max-width: 991px) {
+      .quote h3 {
+        font-size: 4vh; } }
 
 .solutionBlurbs i {
   color: #003f6a;
@@ -9587,6 +9614,12 @@ body {
   #wrapper-footer #footerSocialIcons {
     font-size: 50px;
     color: #004265; }
+  #wrapper-footer .footerPhone span {
+    display: block;
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 5px;
+    font-style: italic; }
   #wrapper-footer #address {
     padding-left: 1.5em;
     position: relative; }
