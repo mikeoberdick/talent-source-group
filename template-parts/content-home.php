@@ -67,7 +67,7 @@
 			</div><!-- .col-sm-12 -->
 
 			<div class="col-sm-6">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex minus doloribus, quasi architecto dolore qui molestias repudiandae, eius ipsum temporibus atque deserunt reprehenderit! Magni fugit placeat dicta, natus tenetur? In.</p>
+				<h2>"Our professional networks are strong, our experience is proven and our results are unmatched."</h2>
 			</div>
 
 			<div class="col-sm-6">
@@ -92,7 +92,7 @@
 				</div>
 					
 				<div class = "col-sm-4">
-					<a class = "btn btn-primary btn-large" href="<?php echo bloginfo('url'); ?>/contact">Contact TSG</a>		
+					<a class = "btn btn-primary btn-large" href="<?php echo bloginfo('url'); ?>/contact">Get In Touch</a>		
 				</div>
 		</div><!-- .row -->
 	</div><!-- .container -->

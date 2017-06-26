@@ -12,6 +12,14 @@ Template:    Understrap
 /*-----------------[BASIC STYLES]-----------------*/
 /*------------------------------------------------*/
 
+.wrapper {
+	padding-bottom: 0;
+}
+
+img {
+	filter: grayscale(100%);
+}
+
 h1, h2, h3, h4, h5 {
 	color: $brand-primary;
 	font-family: $header-font;
@@ -75,6 +83,7 @@ body {
 
 	#headerLogo {
 		height: 112px;
+		filter: none;
 	}
 
 	.headerPhone {
@@ -242,6 +251,13 @@ body {
 /*----------------------[PAGES]-------------------*/
 /*------------------------------------------------*/
 
+.imageCaption {
+	color: #003f6a;
+    font-size: 14px;
+    font-style: italic;
+    text-align: center;
+}
+
 // Homepage
 
 .home {
@@ -384,7 +400,7 @@ body {
 	}
 }
 
-// Employers & Candidates
+// Employers
 
 .recentJobs {
 	a {

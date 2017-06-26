@@ -20,9 +20,9 @@
 
 	</header><!-- .entry-header -->
 
-	<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
+	<?php echo get_the_post_thumbnail($post->ID, 'large', array('class' => 'mb-3 mr-3 float-left') ); ?>
 
-	<div class="entry-content mt-3">
+	<div class="entry-content">
 
 		<?php the_content(); ?>
 

@@ -8,26 +8,12 @@
 
 get_header(); ?>
 
-<?php
 
-	if ( has_post_thumbnail() ) { ?>
-		
-	<header class="entry-header" style = "background-image: url('<?php the_post_thumbnail_url(); ?>')">
-		<div class = "titleWrapper">
-		<?php single_post_title( '<h1 class="entry-title page_header">', '</h1>' ); ?>
-		</div>
-	</header><!-- .entry-header -->
-		
-		<?php }
-		else { ?>
-
-	    <header class="entry-header" style = "background-image: url( <?php echo get_stylesheet_directory_uri() . '/img/header_bg.jpg';?>)">
-	    	<div class = "titleWrapper">
-			<?php single_post_title( '<h1 class="entry-title page_header">', '</h1>' ); ?>
-			</div>
-		</header><!-- .entry-header -->
-		
-		<?php } ?>
+<header class="entry-header" style = "background-image: url( <?php echo get_stylesheet_directory_uri() . '/img/header_bg.jpg';?>)">
+	<div class = "titleWrapper">
+	<?php single_post_title( '<h1 class="entry-title page_header">', '</h1>' ); ?>
+	</div>
+</header><!-- .entry-header -->
 
 <div class="wrapper" id="page-wrapper">
 
@@ -35,7 +21,7 @@ get_header(); ?>
 
 		<div class="row">
 
-			<div class="col-md-8 content-area" id="primary">
+			<div class="col-sm-12 content-area" id="primary">
 
 				<main class="site-main" id="main" role="main">
 
@@ -71,7 +57,7 @@ get_header(); ?>
 
 		</div><!-- #primary -->
 
-			<?php get_sidebar( 'right' ); ?>
+			<?php //get_sidebar( 'right' ); ?>
 
 	</div><!-- .row -->
 

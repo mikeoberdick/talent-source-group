@@ -5,6 +5,20 @@
 			<h1 class = "sectionHeader">Solutions for Today's Professional Workforce</h1>
 		</div>
 	</div>
+
+	<div class="row">
+    <div class="col-sm-12 col-md-6">
+	
+	<?php $image = get_field('image'); ?>
+		<img src = "<?php echo $image['url']; ?>" alt = "Solutions for a Professional Workforce">
+		<p class = "imageCaption mt-2"><?php echo $image['caption']; ?></p>
+    </div><!-- .col-md-6 -->
+
+    <div class="col-sm-12 col-md-6">
+		<?php the_field('content'); ?>
+    </div><!-- .col-md-6 -->
+</div>
+</div><!-- .container -->
 <?php /*
 <div class="row solutionBlurbs mt-4">
 	<div class="col-sm-6 text-center">
@@ -21,10 +35,4 @@
 
 */ ?>
 
-<div class="row">
-	<div class = "col-sm-12">
-		<p><?php the_content(); ?></p>
-	</div>
-</div>
-</div>
 
