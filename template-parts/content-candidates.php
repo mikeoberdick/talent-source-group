@@ -2,14 +2,15 @@
 
 <div class="row">
 	<div class="col-sm-12">
-		<h1 class = "sectionHeader">Looking to Get Hired?</h1>
+		<h1 class = "sectionHeader">Seeking Your Next Opportunity?</h1>
 	</div><!-- .col-sm-12 -->
 </div><!-- .row -->
 
 <div class="row">
     <div class="col-sm-12 col-md-6">
 		<?php the_content(); ?>
-    </div><!-- .col-md-6 -->
+    	<a class = 'btn btn-primary btn-large col-md-6 offset-md-3' href = '<?php echo bloginfo('url'); ?>/current-jobs'>View Current Jobs</a>
+	</div><!-- .col-md-6 -->
 
     <div class="col-sm-12 col-md-6">
     <?php $image = get_field('image'); ?>

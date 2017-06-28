@@ -2,7 +2,7 @@
 
 <div class="row">
 	<div class="col-sm-12">
-		<h1 class = "sectionHeader">Why Work With Us?</h1>
+		<h1 class = "sectionHeader">Are you looking to acquire accounting or finance talent?</h1>
 	</div><!-- .col-sm-12 -->
 </div><!-- .row -->
 
@@ -14,7 +14,7 @@
 
 <div class="row">
 	<div class="col-sm-12">
-		<h1 class = "sectionHeader">Our Approach</h1>
+		<h1 class = "sectionHeader">Why Work With Us?</h1>
 	</div><!-- .col-sm-12 -->
 </div><!-- .row -->
 

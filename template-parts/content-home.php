@@ -88,7 +88,7 @@
 				
 			<div class="row" id = "ctaSection">
 				<div class = "col-sm-8">
-					<h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae sunt ea minima! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae sunt ea minim</h5>
+					<h5>Whether you are looking to acquire accounting or finance talent or you are seeking your next opportunity, we are here to help. Let's chat.</h5>
 				</div>
 					
 				<div class = "col-sm-4">

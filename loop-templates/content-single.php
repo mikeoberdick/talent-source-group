@@ -14,7 +14,7 @@
 
 		<div class="entry-meta">
 
-			<small>Posted on <?php the_time('F jS, Y') ?> by <?php the_author_posts_link() ?></small>
+			<small>Posted on <?php the_time('F jS, Y') ?> by <?php the_author(); ?></small>
 
 		</div><!-- .entry-meta -->
 

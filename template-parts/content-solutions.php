@@ -2,7 +2,7 @@
 	
 	<div class="row">
 		<div class = "col-sm-12">
-			<h1 class = "sectionHeader">Solutions for Today's Professional Workforce</h1>
+			<h1 class = "sectionHeader">Top-Tier Accounting and Finance Talent</h1>
 		</div>
 	</div>
 
