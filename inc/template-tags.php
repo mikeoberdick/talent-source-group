@@ -7,7 +7,7 @@
 
 function all_excerpts_get_more_link( $post_excerpt ) {
 
-return $post_excerpt . ' [...]<p><a class="btn btn-primary understrap-read-more-link float-sm-right" href="' . get_permalink( get_the_ID() ) . '">' . __( 'Read More...', 'understrap' ) . '</a></p>';
+return $post_excerpt . ' [...]<p><a class="btn btn-primary understrap-read-more-link float-sm-right" href="' . get_permalink( get_the_ID() ) . '">' . __( 'Read More', 'understrap' ) . '</a></p>';
 	}
 add_filter( 'wp_trim_excerpt', 'all_excerpts_get_more_link' );
 

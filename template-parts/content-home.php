@@ -9,10 +9,10 @@
 				
 				<div class ="row hpButtons">
 					<div class = "col-sm-6 text-center">
-						<a href = "<?php echo bloginfo('url'); ?>/candidates"><button type="button" class="btn btn-primary btn-lg">Get A Job</button></a>
+						<a href = "<?php echo bloginfo('url'); ?>/candidates"><button type="button" class="btn btn-primary btn-lg">CANDIDATES</button></a>
 					</div>
 					<div class = "col-sm-6 text-center">
-						<a href = "<?php echo bloginfo('url'); ?>/employers"><button type="button" class="btn btn-primary btn-lg">List A Job</button></a>
+						<a href = "<?php echo bloginfo('url'); ?>/employers"><button type="button" class="btn btn-primary btn-lg">EMPLOYERS</button></a>
 					</div>
 				</div><!-- .row -->
 

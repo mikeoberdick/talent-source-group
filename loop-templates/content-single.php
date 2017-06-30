@@ -12,9 +12,9 @@
 
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
-		<div class="entry-meta">
+		<div class="entry-meta mb-3">
 
-			<small>Posted on <?php the_time('F jS, Y') ?> by <?php the_author(); ?></small>
+			<small>Posted on <?php the_time('F jS, Y') ?> by <?php the_author(); ?> in <?php the_category( ', ' ); ?></small>
 
 		</div><!-- .entry-meta -->
 
@@ -26,19 +26,13 @@
 
 		<?php the_content(); ?>
 
-		<?php
+<!-- 		<?php
 		wp_link_pages( array(
 			'before' => '<div class="page-links">' . __( 'Pages:', 'understrap' ),
 			'after'  => '</div>',
 		) );
 		?>
-
+ -->
 	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-
-		<?php understrap_entry_footer(); ?>
-
-	</footer><!-- .entry-footer -->
 
 </article><!-- #post-## -->

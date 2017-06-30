@@ -9410,6 +9410,14 @@ body {
 .progress-bar {
   background-color: #003f6a; }
 
+#application .nf-response-msg {
+  margin-top: 15px;
+  border: solid 3px;
+  border-radius: 5px;
+  padding: 15px; }
+  #application .nf-response-msg p {
+    margin-bottom: 0; }
+
 /*------------------------------------------------*/
 /*----------------------[PAGES]-------------------*/
 /*------------------------------------------------*/
@@ -9444,6 +9452,8 @@ body {
     color: #ffffff;
     font-size: 65px;
     text-shadow: 0 0 15px #000; }
+    .home .heroSection .hpCTA span {
+      color: #ffe200; }
   .home .heroSection .hpButtons {
     justify-content: center;
     text-transform: uppercase; }
@@ -9582,14 +9592,41 @@ body {
     -moz-box-shadow: 0 8px 6px -6px black;
     box-shadow: 0 8px 6px -6px black; }
 
-.single .nav-links a {
-  color: #ffffff; }
-  .single .nav-links a:hover {
-    text-decoration: none; }
+.single .nav-links a:hover {
+  text-decoration: none; }
+
+.nav-links .nav-previous i {
+  margin-right: 5px; }
+
+.nav-links .nav-next i {
+  margin-left: 5px; }
 
 /*------------------------------------------------*/
 /*--------------------[SIDEBAR]-------------------*/
 /*------------------------------------------------*/
+.blog-widget-area .widget_search label {
+  display: none; }
+
+.blog-widget-area .widget {
+  margin-top: 20px; }
+  .blog-widget-area .widget:first-of-type {
+    margin-top: 0; }
+  .blog-widget-area .widget a:hover {
+    text-decoration: none; }
+  .blog-widget-area .widget ul {
+    list-style: none;
+    padding-left: 10px; }
+
+.blog-widget-area .widget_recent_entries ul li {
+  margin-bottom: 15px; }
+
+.mcLink {
+  background-color: #003f6a;
+  color: white;
+  padding: 25px; }
+  .mcLink h4 {
+    color: #ffe200; }
+
 /*------------------------------------------------*/
 /*---------------------[FOOTER]-------------------*/
 /*------------------------------------------------*/

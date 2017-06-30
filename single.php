@@ -16,30 +16,11 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 
 		<div class="row">
 
-			<main class="site-main" id="main">
+			<main class="site-main col-sm-12 col-md-8" id="main">
 
 				<?php while ( have_posts() ) : the_post(); ?>
 
 					<?php get_template_part( 'loop-templates/content', 'single' ); ?>
-
-						<div class="row mt-3 mb-3">
-							<div class="col-md-12">
-								<nav class="navigation post-navigation">
-									<h2 class="sr-only"><?php _e( 'Post navigation', 'understrap' ); ?></h2>
-									<div class="nav-links">
-										<?php
-
-											if ( get_previous_post_link() ) {
-												previous_post_link( '<span class="nav-previous btn btn-primary btn-large float-sm-left">%link</span>', _x( '<i class="fa fa-arrow-left" aria-hidden="true"></i></i>&nbsp;%title', 'Previous post link', 'understrap' ) );
-											}
-											if ( get_next_post_link() ) {
-												next_post_link( '<span class="nav-next btn btn-primary btn-large float-sm-right">%link</span>',     _x( '%title&nbsp;<i class="fa fa-arrow-right" aria-hidden="true"></i></i>', 'Next post link', 'understrap' ) );
-											}
-										?>
-									</div><!-- .nav-links -->
-								</nav><!-- .navigation -->
-							</div>
-						</div>
 
 					<?php
 					// If comments are open or we have at least one comment, load up the comment template.
@@ -52,12 +33,45 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 
 			</main><!-- #main -->
 
-		</div><!-- #primary -->
+			<div class="col-md-4 blog-widget-area" id="blogSidebar" role="complementary">
 
-	</div><!-- .row -->
+			<div class="mcLink mb-3">
+				<h4>Want E-Mail Updates?</h4>
+				<p>Enter your e-mail address below.</p>
+				<p class = "text-center">[MC Signup Here]</p>
+			</div><!-- .mcLink -->
 
-</div><!-- Container end -->
+				<?php dynamic_sidebar('right-sidebar'); ?>
+					
+			</div><!-- #blogSidebar -->
+		</div><!-- .row -->
 
-</div><!-- Wrapper end -->
+			<hr>
+				<nav class="col-sm-12 mt-3 mb-3 navigation post-navigation">
+					<h2 class="sr-only"><?php _e( 'Post navigation', 'understrap' ); ?></h2>
+						<div class="nav-links row">
+							<div class="col-md-6">
+								<?php
+
+									if ( get_previous_post_link() ) {
+										previous_post_link( '<span class="nav-previous">%link</span>', _x( '<i class="fa fa-arrow-left" aria-hidden="true"></i></i>&nbsp;%title', 'Previous post link', 'understrap' ) );
+									} ?>
+								</div><!-- .col-md-6 -->
+								<div class="col-md-6">
+									<?php
+
+									if ( get_next_post_link() ) {
+										next_post_link( '<span class="nav-next">%link</span>',     _x( '%title&nbsp;<i class="fa fa-arrow-right" aria-hidden="true"></i></i>', 'Next post link', 'understrap' ) );
+									}  ?>
+								</div><!-- .col-md-6 -->
+								
+						</div><!-- .nav-links -->
+				</nav>
+
+		</div><!-- .row -->
+
+	</div><!-- .container -->
+
+</div><!-- wrapper -->
 
 <?php get_footer(); ?>

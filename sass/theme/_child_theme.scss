@@ -247,6 +247,19 @@ body {
 	background-color: $brand-primary;
 }
 
+#application {
+	.nf-response-msg {
+		margin-top: 15px;
+	    border: solid 3px;
+	    border-radius: 5px;
+	    padding: 15px;
+
+	    p {
+	    	margin-bottom: 0;
+	    }
+	}
+}
+
 /*------------------------------------------------*/
 /*----------------------[PAGES]-------------------*/
 /*------------------------------------------------*/
@@ -293,6 +306,10 @@ body {
     		color: #ffffff;
     		font-size: 65px;
     		@include text-shadow;
+
+    		span {
+    			color: $brand-tertiary;
+    		}
     	}
 
     .hpButtons {
@@ -522,10 +539,23 @@ body {
 .single {
 		.nav-links {
 			a {
-				color: #ffffff;
-			&:hover {
-				text-decoration: none;
-			}
+				&:hover {
+					text-decoration: none;
+				}
+		}
+	}
+}
+
+.nav-links {
+	.nav-previous {
+		i {
+			margin-right: 5px;
+		}
+	}
+
+	.nav-next {
+		i {
+			margin-left: 5px;
 		}
 	}
 }
@@ -535,6 +565,50 @@ body {
 /*--------------------[SIDEBAR]-------------------*/
 /*------------------------------------------------*/
 
+.blog-widget-area {
+	.widget_search {
+		label {
+			display: none;
+		}
+	}
+
+	.widget {
+		margin-top: 20px;
+
+		&:first-of-type {
+			margin-top: 0;
+		}
+
+		a {
+			&:hover {
+				text-decoration: none;
+			}
+		}
+
+		ul {
+			list-style: none;
+    		padding-left: 10px;
+		}
+	}
+
+	.widget_recent_entries {
+		ul {
+			li {
+				margin-bottom: 15px;
+			}
+		}
+	}
+}
+
+.mcLink {
+	background-color: $brand-primary;
+    color: white;
+    padding: 25px;
+
+    h4 {
+    	color: $brand-tertiary;
+    }
+}
 
 /*------------------------------------------------*/
 /*---------------------[FOOTER]-------------------*/

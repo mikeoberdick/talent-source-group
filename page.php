@@ -41,8 +41,8 @@ if ( !is_page('homepage' ) ) {
 <div class="wrapper" id="page-wrapper">
 
 <div id = "sideTabs">
-	<a id = "getHired" href = "<?php echo bloginfo('url'); ?>/candidates"><i class="fa fa-arrow-left" aria-hidden="true"></i> Get Hired</a>
-	<a id = "hireSomeone" href = "<?php echo bloginfo('url'); ?>/employers"><i class="fa fa-arrow-left" aria-hidden="true"></i> Hire Someone</a>
+	<a id = "getHired" href = "<?php echo bloginfo('url'); ?>/candidates"><i class="fa fa-arrow-left" aria-hidden="true"></i> Candidates</a>
+	<a id = "hireSomeone" href = "<?php echo bloginfo('url'); ?>/employers"><i class="fa fa-arrow-left" aria-hidden="true"></i> Employers</a>
 </div>
 
 	<?php while ( have_posts() ) : the_post(); ?>

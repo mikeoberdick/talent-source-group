@@ -3,8 +3,12 @@
 <div class="row">
   <div class="col-sm-12">
     <h1 class = "sectionHeader">Talent Source Group Job Listings</h1>
-      <?php the_content(); ?>
-    </div><!-- /.col-sm-12 -->
+
+<?php if( the_content() ) : ?>
+   <?php the_content(); ?>
+<?php endif; ?>
+
+  </div><!-- /.col-sm-12 -->
 </div>
 
 <?php

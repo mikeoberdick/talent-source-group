@@ -2,7 +2,7 @@
 
 <div class="row">
 	<div class="col-sm-12">
-		<h1 class = "sectionHeader">Are you looking to acquire accounting or finance talent?</h1>
+		<h1 class = "sectionHeader">ARE YOU LOOKING TO ACQUIRE ACCOUNTING OR FINANCE TALENT?</h1>
 	</div><!-- .col-sm-12 -->
 </div><!-- .row -->
 
