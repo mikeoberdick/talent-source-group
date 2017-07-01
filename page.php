@@ -69,7 +69,7 @@ if ( !is_page('homepage' ) ) {
 		get_template_part( 'template-parts/content', 'representative_areas' );
 	}
 
-	else if ( is_page ( 'current-jobs' ) ) {
+	else if ( is_page ( 'current-finance-and-accounting-jobs-in-connecticut' ) ) {
 		get_template_part( 'template-parts/content', 'jobs' );
 	}
 
