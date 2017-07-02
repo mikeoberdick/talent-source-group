@@ -7,7 +7,9 @@
 	<div class="row">
 
 		<div id = "bioPic" class = "col-sm-4">
-			<img src = "<?php the_field('pio_picture'); ?>">
+			<?php $image = get_field('pio_picture'); ?>
+			<img src = "<?php echo $image['url']; ?>" alt = "<?php echo $image['alt']; ?>" title = "<?php echo $image['title']; ?>">
+			<p class = "imageCaption mt-2"><?php echo $image['caption']; ?></p>
 		</div>
 
 		<div class = "col-sm-8">

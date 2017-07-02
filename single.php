@@ -33,17 +33,8 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 
 			</main><!-- #main -->
 
-			<div class="col-md-4 blog-widget-area" id="blogSidebar" role="complementary">
-
-			<div class="mcLink mb-3">
-				<h4>Want E-Mail Updates?</h4>
-				<p>Enter your e-mail address below.</p>
-				<p class = "text-center">[MC Signup Here]</p>
-			</div><!-- .mcLink -->
-
-				<?php dynamic_sidebar('right-sidebar'); ?>
-					
-			</div><!-- #blogSidebar -->
+			<?php get_sidebar( 'right' ); ?>
+			
 		</div><!-- .row -->
 
 			<hr>

@@ -15,21 +15,14 @@ $container   = get_theme_mod( 'understrap_container_type' );
 $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 ?>
 
-<div class="wrapper" id="archive-wrapper">
-
-	<div class="<?php echo esc_html( $container ); ?>" id="content" tabindex="-1">
-
-		<header class="entry-header" style = "background-image: url( <?php echo get_stylesheet_directory_uri() . '/img/header_bg.jpg';?>)">
-	    	<div class = "titleWrapper">
-			<?php the_archive_title( '<h1 class="entry-title page_header">', '</h1>' );
-			the_archive_description( '<div class="taxonomy-description">', '</div>' ); ?>
+	    <header class="entry-header" style = "background-image: url( <?php echo get_stylesheet_directory_uri() . '/img/header_bg.jpg';?>)">
+    		<div class = "titleWrapper">
+			<?php the_archive_title( '<h1 class="entry-title page_header">', '</h1>' ); ?>
 			</div>
 		</header><!-- .entry-header -->
-
+<div class="wrapper" id="archive-wrapper">
+	<div class="<?php echo esc_html( $container ); ?>" id="content" tabindex="-1">
 		<div class="row">
-
-			<!-- Do the left sidebar check -->
-			<?php get_template_part( 'global-templates/left-sidebar-check', 'none' ); ?>
 
 			<main class="site-main" id="main">
 
@@ -62,18 +55,6 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 			<?php understrap_pagination(); ?>
 
 		</div><!-- #primary -->
-
-		<div class="col-md-4 blog-widget-area" id="blogSidebar" role="complementary">
-
-			<div class="mcLink mb-3">
-				<h4>Want E-Mail Updates?</h4>
-				<p>Enter your e-mail address below.</p>
-				<p class = "text-center">[MC Signup Here]</p>
-			</div><!-- .mcLink -->
-
-				<?php dynamic_sidebar('right-sidebar'); ?>
-					
-			</div><!-- #blogSidebar -->
 
 	</div> <!-- .row -->
 

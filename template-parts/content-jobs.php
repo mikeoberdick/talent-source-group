@@ -2,7 +2,7 @@
 
 <div class="row">
   <div class="col-sm-12">
-    <h1 class = "sectionHeader">Talent Source Group Job Listings</h1>
+    <h1 class = "sectionHeader">TSG Featured Connecticut Jobs</h1>
 
 <?php if( the_content() ) : ?>
    <?php the_content(); ?>

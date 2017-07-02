@@ -9345,7 +9345,7 @@ body {
           border-color: #003f6a; }
   .navbar .hideJobs .current_jobs {
     display: none; }
-  .navbar .current-menu-item a {
+  .navbar .current-menu-item a, .navbar .current_page_parent a {
     border-color: #003f6a !important; }
   @media (max-width: 991px) {
     .navbar .dropdown-menu {
@@ -9422,7 +9422,7 @@ body {
 /*----------------------[PAGES]-------------------*/
 /*------------------------------------------------*/
 .imageCaption {
-  color: #003f6a;
+  color: #000;
   font-size: 14px;
   font-style: italic;
   text-align: center; }
@@ -9584,14 +9584,6 @@ body {
 .blog .widget {
   margin-bottom: 25px; }
 
-.blog .widget_media_image {
-  text-align: center; }
-  .blog .widget_media_image img {
-    width: 250px;
-    -webkit-box-shadow: 0 8px 6px -6px black;
-    -moz-box-shadow: 0 8px 6px -6px black;
-    box-shadow: 0 8px 6px -6px black; }
-
 .single .nav-links a:hover {
   text-decoration: none; }
 
@@ -9604,28 +9596,35 @@ body {
 /*------------------------------------------------*/
 /*--------------------[SIDEBAR]-------------------*/
 /*------------------------------------------------*/
-.blog-widget-area .widget_search label {
-  display: none; }
-
-.blog-widget-area .widget {
+.widget-area .widget {
   margin-top: 20px; }
-  .blog-widget-area .widget:first-of-type {
+  .widget-area .widget:first-of-type {
     margin-top: 0; }
-  .blog-widget-area .widget a:hover {
+  .widget-area .widget a:hover {
     text-decoration: none; }
-  .blog-widget-area .widget ul {
+  .widget-area .widget ul {
     list-style: none;
     padding-left: 10px; }
+  .widget-area .widget #mc_embed_signup #mce-EMAIL {
+    width: 100%; }
+  .widget-area .widget #mc_embed_signup #mc-embedded-subscribe {
+    color: #003f6a;
+    background-color: #fff;
+    box-shadow: 0 8px 6px -6px #000;
+    padding: 10px 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 100%; }
 
-.blog-widget-area .widget_recent_entries ul li {
-  margin-bottom: 15px; }
-
-.mcLink {
+.widget-area .mcLink {
   background-color: #003f6a;
   color: white;
   padding: 25px; }
-  .mcLink h4 {
+  .widget-area .mcLink h4 {
     color: #ffe200; }
+
+.widget-area .widget_recent_entries ul li {
+  margin-bottom: 15px; }
 
 /*------------------------------------------------*/
 /*---------------------[FOOTER]-------------------*/

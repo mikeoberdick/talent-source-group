@@ -36,7 +36,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			</div>
 			
 			<div class = "col-sm-6 text-center">
-				<a href ="<?php echo site_url(); ?>"><img id = "headerLogo" src = "<?php the_field('company_logo', 'option'); ?>" alt = "<?php echo bloginfo('name') ?>"></a>
+				<a href ="<?php echo site_url(); ?>"><img id = "headerLogo" src = "<?php the_field('company_logo', 'option'); ?>" alt = "CT Accounting & Finance Recruiter" title = "Talent Source Group Accounting & Finance Recruiters"></a>
 			</div><!-- .col-sm-6 -->
 			
 			<div class = "col-sm-3 mt-3 headerPhone phoneSecond">

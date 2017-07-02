@@ -10,7 +10,7 @@
     <div class="col-sm-12 col-md-6">
 	
 	<?php $image = get_field('image'); ?>
-		<img src = "<?php echo $image['url']; ?>" alt = "Solutions for a Professional Workforce">
+		<img src = "<?php echo $image['url']; ?>" alt = "<?php echo $image['alt']; ?>" title = "<?php echo $image['title']; ?>">
 		<p class = "imageCaption mt-2"><?php echo $image['caption']; ?></p>
     </div><!-- .col-md-6 -->
 

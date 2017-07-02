@@ -57,8 +57,6 @@ get_header(); ?>
 
 		</div><!-- #primary -->
 
-			<?php //get_sidebar( 'right' ); ?>
-
 	</div><!-- .row -->
 
 </div><!-- Container end -->

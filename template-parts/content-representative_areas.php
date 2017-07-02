@@ -1,7 +1,7 @@
 <div class = "container">
 <div class="row">
 	<div class="col-sm-12">
-		<h1 class = "sectionHeader">We've Got You Covered</h1>
+		<h1 class = "sectionHeader">Executive Search Representative Areas</h1>
 		<?php the_content( ); ?>
 	</div><!-- .col-sm-12 -->
 </div><!-- .row -->
